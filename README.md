@@ -11,6 +11,6 @@
   ○ Detalle de producto
   ○ Carrito de compras
   ○ Formulario de registro
-  
   ○ Formulario de login
+  
 ★ Opcional: Boceto o diseño gráfico del sitio (logo, colores, tipografías, etc).
