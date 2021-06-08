@@ -8,7 +8,7 @@ El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que l
 
 ## Integrantes del grupo
 
-1.**Francisco Massimino**
+-**Francisco Massimino**
 
 19 años. Apasionado por la tecnologia, amante del deporte y autodidacta. 
 
