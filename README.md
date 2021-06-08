@@ -15,7 +15,6 @@ El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que l
 
 ## Páginas de referencia
 1. https://www.footlocker.es
-
 Por la distribución del sitio y los productos que vende
 
 2. https://www.unknwn.co
