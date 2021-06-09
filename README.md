@@ -2,7 +2,7 @@
 
 ## Temática
 
-Calza2 es una tienda online de zapatillas modernas y de diseñador. El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que les gusten las zapatillas de diseñador y están dispuestos a pagar un precio especial por ello. La temática que tenemos pensada para llevar acabo este proyecto es una web minimalista y lujosa. Haciendo incapie en mostrar la calidad de nuestros productos para que el usuario se sienta seguro de su compra solo con ver el diseño de la web. 
+Calza2 es una tienda online de zapatillas modernas y de diseñador. El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que les gusten las zapatillas exclusivas y de diseñador, y están dispuestos a pagar un precio especial por ello. La temática que tenemos pensada para llevar acabo este proyecto es una web minimalista y lujosa. Haciendo incapie en mostrar la calidad de nuestros productos para que el usuario se sienta seguro de su compra solo con ver el diseño de la web. 
 
 
 
