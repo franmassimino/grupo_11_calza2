@@ -13,6 +13,16 @@ El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que l
 19 años. Apasionado por la tecnologia, amante del deporte y autodidacta. 
 
 
+- **Agustín varela**
+
+23 años. Me gusta jugar al tenis y  aprender nuevas cosas.
+
+
+- **Israel sutton**
+
+20 años. Me gusta mucho trabajar y hacer gimnasia.
+
+
 ## Páginas de referencia
 1. https://www.footlocker.es
 
