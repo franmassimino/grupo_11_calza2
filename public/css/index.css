@@ -1,0 +1,206 @@
+main{
+    max-width: 100vw;
+    padding: 2.5vh 5vw;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*hero*/
+
+.hero{
+    height: 65vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.carrusel{
+    background-image: url('/img/carrusel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.carrusel h1{
+    position: absolute;
+    left: 50px;
+    bottom: 15vh;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.carrusel .cta{
+    position: absolute;
+    left: 50px;
+    bottom: 12.5vh;
+    font-size: 1.75em;
+    text-decoration: none;
+    color: black;
+    background: var(--dorado);
+    padding: .5em 1.25em;
+    transition: all .3s ease;
+}
+
+.cta:hover{
+    background-color: var(--dorado-oscuro);
+}
+
+
+/*productos*/
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h2{
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products .title{
+    padding: 1.5em 2em ;
+    border-bottom: 3px solid var(--dorado);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.products div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    max-width: 1450px;
+}
+
+.products article{
+    width: 25%;
+    margin: 0 2vw;
+    border: 3px solid rgba(212, 212, 212, 0.25);
+    background-color: rgba(241, 241, 241, .3);
+    padding: 1.5em 1em;
+    padding-top: 0;
+    position: relative;
+    cursor: pointer;
+    min-width: 175px;
+}
+
+figure.product-img{
+    max-width: 250px;
+}
+
+
+
+.products article img{
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.products article img:hover{
+    transform: scaleY(1.1);
+    backface-visibility: hidden;
+}
+
+.products article h3{
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: .5em;
+}
+
+.products article p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'roboto';
+    color: var(--gris-claro);
+}
+
+.products .comprar{
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 1.5em;
+    background: var(--dorado);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75em;
+    font-family: 'roboto';
+    position: absolute;
+    right: 5%;
+    bottom: 3.5%;
+    transition: all .3s ease;
+}
+
+.comprar:hover{
+    background-color: var(--dorado-oscuro);
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /*hero*/
+
+    .carrusel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carrusel h1{
+        position: relative;
+        text-align: center;
+        left: auto;
+        bottom: auto;
+    }
+
+    .carrusel .cta{
+        position: relative;
+        text-align: center;
+        left: auto;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*hero*/
+
+    .hero{
+        height: 70vh;
+    }
+
+    .carrusel{
+        background-image: url('/img/carrusel-mobile.png');
+        justify-content: flex-end;
+    }
+
+    .carrusel h1{
+        font-size: 10vw;
+    }
+
+    .carrusel .cta{
+        font-size: 5vw;
+        margin-bottom: 10vh;
+    }
+}
+
