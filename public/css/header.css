@@ -7,9 +7,9 @@ body{
 
 :root{
     --negro: #1A1A1A;
-    --dorado: #FFEBB8;
+    --dorado: #fadf9d;
     --gris-claro: #A0A0A0;
-    --dorado-oscuro: #f1d58d;
+    --dorado-oscuro: rgb(240, 206, 121);
 }
 
 header{
