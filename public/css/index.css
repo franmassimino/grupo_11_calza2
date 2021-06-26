@@ -98,7 +98,7 @@ main{
     position: relative;
     cursor: pointer;
     min-width: 175px;
-    transition: all .1s ease;
+    transition: all .3s ease;
 }
 
 .products article:hover{
@@ -145,7 +145,7 @@ figure.product-img{
     padding: 0.5em 1.5em;
     background: var(--dorado);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight:700;
     font-size: .75em;
     font-family: 'roboto';
     position: absolute;
@@ -181,13 +181,10 @@ figure.product-img{
 .banners a{
     text-decoration: none;
     padding: .75em 1.25em;
-    background: rgba(122, 122, 122, .3);
+    background: rgba(165, 165, 165, 0.5);
     transition: all .3s ease;
 }
 
-.banners a:hover{
-    background: rgba(122, 122, 122, .7);
-}
 
 .banners h3{
     font-size: 1.5em;
