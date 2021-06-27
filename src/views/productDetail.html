@@ -45,70 +45,72 @@
         </nav>
     </header>
 
-    <main>
-        <figure class="imgprincipal">
-            <img src="/img/zapatilla1.png" alt="principal" class="productselect">
-        </figure>
-        <div class="marca-principal">
-        <h3>NIKE</h3>
-        </div>
-        <div class="modelo-principal">
-        <h2>AIR LOREM</h2>
-        </div>
-        <div class="precio">
-            <p>$844</p>
-        </div>
-        
-        <section class="seleccion-estilos">
-            <div class="color">
-                <h3>COLOR</h3>
-            </div>
-            <div class="barra-estilos">
-                <article>
-                    <div class="estilo">
-                        <h5>BLANCAS</h5>
-                    </div>
-                    <div class="cuadrado"></div>
-                </article>
-                <article>
-                    <div class="estilo">
-                        <h5>ROJAS</h5>
-                    </div>
-                    <div class="cuadrado"></div>
-                </article>
-                <article>
-                    <div class="estilo">
-                        <h5>NEGRAS</h5>
-                    </div>
-                    <div class="cuadrado"></div>
-                </article>
-                <article>
-                    <div class="estilo">
-                        <h5>CAMUFLADAS</h5>
-                    </div>
-                    <div class="cuadrado"></div>
-                </article>
-            </div>
-        </section>
-
-        <div class="titulo-informacion">
-            <h3>INFORMACION</h3>
-        </div>
-        <div class="informacion">
-            <p>Nike Free Run Trail gets retro'd in similar fashion to the early 2000s silhouette. The sneaker features a suede, sock-like free run upper which gets placed on a rugged outsole, made to withstand all conditions. 
-            </p>
-            <ul>
-                <li>Suede upper</li>
-                <li>Rugged free run outsole</li>
-                <li>Sock-like fit </li>
-            </ul>
-         </div>
-    <button type="button" class="btn1">AGREGAR AL CARRITO</button>
-    <button type="button" class="btn2">COMPRAR YA</button>     
     
+    <main>
+        <div class="producto-completo">       
+        <div class="lado-izquierdo">
+            <figure class="imgprincipal">
+                <img src="/img/zapatilla1.png" alt="principal" class="productselect">
+            </figure>
+        </div>
+        <div class="lado-derecho">
+            <div class="marca-principal">
+            <h3>NIKE</h3>
+            </div>
+            <div class="modelo-principal">
+            <h2>AIR LOREM</h2>
+            </div>
+            <div class="precio">
+                <p>$844</p>
+            </div>
+
+            <div class="container">
+	
+                <h3 class="color">COLOR</h3>
+          
+            <ul class="lista-opciones">
+                <li class="boton-estilo">
+                    <label class="option">Blancas</label> 
+                    <input type="radio" id="selector" name="selector">                             
+                </li>
+          
+                <li class="boton-estilo"> 
+                    <label class="option">Rojas</label>
+                    <input type="radio" id="selector" name="selector">                                
+                </li>
+          
+                <li class="boton-estilo">
+                    <label class="option">Negras</label>  
+                    <input type="radio" id="selector" name="selector">                        
+                </li>
+                <li class="boton-estilo">
+                    <label class="option">Camufladas</label>
+                    <input type="radio" id="selector" name="selector">                                          
+                </li>
+            </ul>
+            </div>
+
+            <div class="titulo-informacion">
+                <h3>INFORMACION</h3>
+            </div>
+            <div class="informacion">
+                <p>Nike Free Run Trail gets retro'd in similar fashion to the early 2000s silhouette. The sneaker features a suede, sock-like free run upper which gets placed on a rugged outsole, made to withstand all conditions. 
+                </p>
+                <ul>
+                    <li>Suede upper</li>
+                    <li>Rugged free run outsole</li>
+                    <li>Sock-like fit </li>
+                </ul>
+            </div>
+            <div class="botones-de-compra">
+                <button type="button" class="btn1">AGREGAR AL CARRITO</button>
+                <button type="button" class="btn2">COMPRAR YA</button>     
+            </div>
+        </div>
+        </div>   
     
     <section class="products">
-        <div class="title">
+        <div class="title" id="tittle-productdetail">
             <h2>Productos Similares</h2>
         </div>
         <div class="products-top-row">
