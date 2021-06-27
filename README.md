@@ -8,11 +8,6 @@ Calza2 es una tienda online de zapatillas modernas y de diseñador. El público 
 
 ## Integrantes del grupo
 
-- **Francisco Massimino**
-
-19 años. Apasionado por la tecnologia, amante del deporte y autodidacta. 
-
-
 - **Agustín varela**
 
 23 años. Me gusta jugar al tenis y  aprender nuevas cosas.
@@ -48,3 +43,7 @@ Por las categorias de los productos
 
 Porque nos llamo la atencion los efectos visuales que tiene la pagina
 
+
+## Tablero de trabajo
+
+https://trello.com/b/Ph9RuJ4v/calza2
