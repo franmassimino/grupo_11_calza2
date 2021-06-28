@@ -1,14 +1,22 @@
+.producto-completo{
+    max-width: 1500px;
+}
 
 .productselect {
     width: 90%;
-    border: solid 3px #A0A0A0;
     text-align: center;
     max-width: 690px;
 }
 
 .imgprincipal {
     text-align: center;
-    
+    padding: 1em;
+    border: solid 3px #e4e4e479;
+
+}
+
+.lado-izquierdo{
+    margin-right: 2em;
 }
 
 .modelo-principal h2{

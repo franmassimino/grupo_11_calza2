@@ -183,7 +183,7 @@
         login.addEventListener('click', e => {
             e.preventDefault()
             gsap.to('#overlay', {duration: .5, x: 0, ease:'power.inOut'});
-            gsap.to('.login', {duration: .25, delay:.25, opacity:1, x: 0});
+            gsap.to('.login', {duration: 1, delay:.5, opacity:1, x: 0});
             gsap.to('.register', {duration: .25, opacity:0});
             gsap.from('#right', {duration: .75, opacity:1, x: 100, ease:'power.inOut'})
             registerForm.classList.remove('show')
