@@ -6,13 +6,25 @@ main{
     margin-top: 30px;
     width: 95%;
     text-align: center;
-    
-    background-color: rgba(241, 241, 241, .5);
-    
+    background-color: rgba(241, 241, 241, .4);
+    cursor: pointer;
+    transition: all .3s ease;
 }
+
+.carrito-producto:hover{
+    background-color: rgba(241, 241, 241, .75);
+}
+
+
 .carrito-img {
     max-width: 90%;
     margin: auto;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.carrito-img:hover{
+    transform: scale(1.05)
 }
 
 #carrito-img {
@@ -97,13 +109,15 @@ padding-top: 10px;
     width: 90%;
     max-width: 494px;
     text-align: center;
-    border: solid 3px #f0f0f091;  
+    border: solid 3px #f0f0f03a;  
     margin: auto;
     margin-top: 45px;
     margin-bottom: 35px;
     padding: 1em;
     height: 50%;
+    transition: all .3s ease;
 }
+
 
 .seccion-titulo h3{
     text-align: left;
