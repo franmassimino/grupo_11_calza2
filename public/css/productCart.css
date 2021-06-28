@@ -9,6 +9,7 @@ main{
     background-color: rgba(241, 241, 241, .4);
     cursor: pointer;
     transition: all .3s ease;
+    max-width: 350px;
 }
 
 .carrito-producto:hover{
@@ -93,9 +94,10 @@ padding-top: 10px;
 .titulo-carrito {
     text-align: left;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 800;
     width: 100%;
     margin-left: 1em;
+    font-family: 'montserrat';
 }
 .titulo-carrito p {
     text-align: left;
@@ -123,9 +125,17 @@ padding-top: 10px;
     text-align: left;
     margin-left: 15px;
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 1.25em;
     font-weight: bold;
     width: 100%; 
+}
+
+.carrito-producto h3{
+    font-size: 1.25em;
+}
+
+.fila p{
+    font-size: .75em;
 }
 
 .fila-superior {
@@ -138,6 +148,8 @@ padding-top: 10px;
     border-top: solid 1.5px #A0A0A0;
     padding-top: 20px;
     font-weight: 700;
+    font-size: .75em;
+    text-align: left;
 }
 
 #seccion-superior {
@@ -147,7 +159,7 @@ padding-top: 10px;
     text-align: left;
     margin-left: 15px;
     padding-top: 15px;
-    font-size: 15px;
+    font-size: .75em;
 }
 #ultima-sub-fila {
     padding-bottom: 20px;
@@ -209,14 +221,17 @@ main{
 .titulo-carrito {
         text-align: left;
         font-size: 2.5em;
-        font-weight: bold;
+        font-weight: 800;
         width: 100%;
+        font-family: 'montserrat';
   }
 
     
 .carrito-producto {
     display: flex;
     flex-direction: row;   
+    max-width: none;
+
 }
 #flex-izquierda {
     max-width: 50%;
@@ -231,13 +246,21 @@ main{
 }
 
 .carrito-producto h3 {
-    font-size: 20px;
+    font-size: 1.5em;
     margin-top: 20px;
     border-top: solid 0px #A0A0A0;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: .25em;
     }
+
+.fila-superior{
+    font-size: 1em;
+}
+
+p.sub-fila{
+    font-size:.85em
+}
 
 #fila-1 {
     margin-top: 40px;
@@ -250,6 +273,15 @@ main{
     margin-top: 45px;
     padding-top: 20px;
     padding-bottom: 20px;  
+}
+
+
+.fila p{
+    font-size: 1em;
+}
+
+.seccion-titulo h3{
+    font-size: 1.5em;
 }
 
 
@@ -284,6 +316,7 @@ main{
 
     .titulo-carrito{
         max-width: 1300px;
+        font-weight: 800;
     }
 
     .carrito-producto{
