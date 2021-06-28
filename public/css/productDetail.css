@@ -26,7 +26,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 425px;
+    max-height: 400px;
 }
 
 
@@ -94,14 +94,20 @@ main{
     font-size: 13px;
     max-width: 80vw;
     margin-bottom: 1.5em;
-    margin-top: .35em;
-
-    
+    margin-top: .35em;    
+    line-height: 1.5em;
 }
+
+
 .informacion ul {
     list-style-type: disc;
     margin-left: 5vw;
     padding-top: 20px;
+}
+
+
+.informacion ul li{
+    margin-bottom: .5em;
 }
 
 .botones-de-compra{
@@ -191,6 +197,12 @@ main{
     padding: 0.5em 0.0em ;  
     font-size: 1.25em;  
 }
+
+.imgprincipal{
+    max-height: 500px;
+
+}
+
 .modelo-principal h2{
     text-align: left;
     font-size: 2.5em;
@@ -208,6 +220,7 @@ main{
     justify-content: left;
     margin-top: 10px;
     font-size: 1.25em;
+    margin-bottom: .25em;
 }
 
 .lista-opciones {
@@ -216,7 +229,7 @@ main{
 
 
 .titulo-informacion h3{
-    padding: 0.5em 0em ;  
+    padding: 0.3em 0em ;  
     justify-content: left; 
     font-size: 1.25em;
 
@@ -231,12 +244,13 @@ main{
     margin-left: 2vw;
 }
 
+
 .botones-de-compra{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items:center;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
 .btn1 {

@@ -299,12 +299,17 @@ figure.product-img{
     }
 
     .products article{
-        width: 30%;
+        width: 35%;
         margin-top: 1.5em;
+        max-width: 300px;
     }
 
     .products{
         margin-bottom: 5vh;
+    }
+
+    div.title{
+        margin-bottom: 2.5vh;
     }
 
     
@@ -391,10 +396,11 @@ figure.product-img{
     }
 
     .products article{
-        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 60%;
+        max-width: 400px;
     }
 
     .products h3{
@@ -407,5 +413,9 @@ figure.product-img{
 
     .comprar{
         display: none;
+    }
+
+    .products h2{
+       font-size: 1.5em;
     }
 }
