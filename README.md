@@ -1,5 +1,7 @@
 # **CALZA2**
 
+![LOGO](https://user-images.githubusercontent.com/67247715/123701157-da2b3e00-d837-11eb-9f83-1fbb5a431e50.png)
+
 ## Temática
 
 Calza2 es una tienda online de zapatillas modernas y de diseñador. El público al que apuntamos es de hombres y mujeres, entre 18 y 35 años, que les gusten las zapatillas exclusivas y de diseñador, y están dispuestos a pagar un precio especial por ello. La temática que tenemos pensada para llevar acabo este proyecto es una web minimalista y lujosa. Haciendo incapie en mostrar la calidad de nuestros productos para que el usuario se sienta seguro de su compra solo con ver el diseño de la web. 
@@ -13,9 +15,9 @@ Calza2 es una tienda online de zapatillas modernas y de diseñador. El público 
 23 años. Me gusta jugar al tenis y  aprender nuevas cosas.
 
 
-- **Israel sutton**
+- **Francisco Massimino**
 
-20 años. Me gusta mucho trabajar y hacer gimnasia.
+19 años. Autodidacta, apasionado por la tecnología y amante del deporte.
 
 
 ## Páginas de referencia
