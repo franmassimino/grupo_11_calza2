@@ -95,6 +95,10 @@ div.bottom-footer-links i{
     margin: 1em;
 }
 
+#last{
+   visibility: hidden;
+}
+
 @media (min-width:816px) {
     .mobile-footer{
         display: none;
@@ -122,6 +126,8 @@ div.bottom-footer-links i{
         width: 100%;
         max-width: 800px;
     }
+
+
 
     .left-footer{
         display: flex;
@@ -182,4 +188,10 @@ div.bottom-footer-links i{
     .desktop-footer .footer-navs{
         margin: 0;
     }
+}
+
+@media(min-width:1024px){
+    #last{
+        visibility: visible;
+     }
 }
