@@ -99,6 +99,8 @@ main{
     cursor: pointer;
     min-width: 175px;
     transition: all .3s ease;
+    max-width: 260px;
+    box-sizing: border-box;
 }
 
 .products article:hover{
@@ -109,9 +111,12 @@ main{
 
 figure.product-img{
     max-width: 250px;
+    margin: 0;
 }
 
-
+#imagen-rota{
+    margin-right: 0;
+}
 
 .products article img{
     width: 100%;
@@ -302,8 +307,6 @@ figure.product-img{
         margin-bottom: 5vh;
     }
 
-
-
     
     /*banners*/
     .banners div{
@@ -406,4 +409,3 @@ figure.product-img{
         display: none;
     }
 }
-
