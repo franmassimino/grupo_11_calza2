@@ -1,0 +1,3 @@
+# **RETROSPECTIVA**
+Durante este sprint nos enfocaremos en comenzar planificando las distintas tareas y en organizarnos aún mejor que en el anterior con respecto a los tiempos y dificultades de cada una de ellas. Debemos mantener una constante comunicación para que ambos tengamos claras las ideas generales del sprint, de cada tarea, y ayudarnos en caso de ser necesario.
+Intentaremos continuar con la costumbre de consultarnos cada vez que tengamos una nueva idea y recurrir a nuestro compañero con las dificultades de cada día. Nos centraremos en gestionar bien los tiempos del sprint y utilizarlo de forma eficaz.
