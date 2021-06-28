@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/productCart.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/productCart.css">
+    <link rel="stylesheet" href="/css/productCart.css"> 
     <title>Carrito | CALZA2</title>
 </head>
 <body>
@@ -26,10 +25,13 @@
                 <li><a href="/">Contacto</a></li>
                 <li><a href="/">Acerca de</a></li>
             </ul>
-            <div class="icons">
-                <a href="/product-cart"><i class="fas fa-shopping-cart"></i></a>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
+            <div class="right-content">
+                <div class="icons">
+                    <i class="fas fa-search"></i>
+                    <a href="/product-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="/login"><i class="fas fa-user"></i></a>
+                </div>
+                <a href="/login" class="login-button">Iniciar sesión / registrarse</a>
             </div>
         </nav>
         <nav class="mobile-nav">
@@ -45,7 +47,6 @@
             </div>
         </nav>
     </header>
-
 
 
     <main>
@@ -77,9 +78,9 @@
                             <p class="descript-titular">$ 450</p>
                         </div>
                         <div class="accesos">
-                            <p><a href="">Eliminar</a></p>
-                            <p><a href="">Editar</a></p>
-                            <p><a href="">Guardar</a></p>
+                            <a class="link" href="">Eliminar</a>
+                            <a class="link" href="">Editar</a>
+                            <a class="link" href="">Guardar</a>
                         </div>
                     </div>
             </div>
@@ -87,12 +88,12 @@
             <div class="carrito-producto">
                 <div class="media-flex" id="flex-izquierda">
                     <figure class="carrito-img">
-                        <img src="/img/zapatilla2.png" alt="" id="carrito-img">
+                        <img src="/img/zapatilla6.png" alt="" id="carrito-img">
                     </figure>
                 </div>
                 <div class="media-flex" id="flex-derecha">
-                    <h3>Adidas Originals 11</h3>
-                    <p>Naranja</p>
+                    <h3>Adidas Ultra Boost 20</h3>
+                    <p>Verde neon</p>
                     <div class="fila" id="fila-1">
                         <p class="titualar">TALLA</p>
                         <p class="descript-titular">40 Hombre</p>
@@ -106,9 +107,9 @@
                         <p class="descript-titular">$ 450</p>
                     </div>
                     <div class="accesos">
-                        <p><a href="">Eliminar</a></p>
-                        <p><a href="">Editar</a></p>
-                        <p><a href="">Guardar</a></p>
+                        <a class="link" href="">Eliminar</a>
+                        <a class="link" href="">Editar</a>
+                        <a class="link" href="">Guardar</a>
                     </div>
                 </div>
         </div>
@@ -116,12 +117,12 @@
         <div class="carrito-producto">
             <div class="media-flex" id="flex-izquierda">
                 <figure class="carrito-img">
-                    <img src="/img/zapatilla2.png" alt="" id="carrito-img">
+                    <img src="/img/zapatilla8.png" alt="" id="carrito-img">
                 </figure>
             </div>
             <div class="media-flex" id="flex-derecha">
-                <h3>Adidas Originals 11</h3>
-                <p>Naranja</p>
+                <h3>Nike Air More Uptempo</h3>
+                <p>Negro</p>
                 <div class="fila" id="fila-1">
                     <p class="titualar">TALLA</p>
                     <p class="descript-titular">40 Hombre</p>
@@ -135,9 +136,9 @@
                     <p class="descript-titular">$ 450</p>
                 </div>
                 <div class="accesos">
-                    <p><a href="">Eliminar</a></p>
-                    <p><a href="">Editar</a></p>
-                    <p><a href="">Guardar</a></p>
+                    <a class="link" href="">Eliminar</a>
+                    <a class="link" href="">Editar</a>
+                    <a class="link" href="">Guardar</a>
                 </div>
             </div>
     </div>
@@ -151,7 +152,7 @@
                 <p>SUBTOTAL:</p>
                 <p>$ 3000,00</p>
             </div>
-                <p  class='sub-fila'>4 articulos</p>
+                <p  class='sub-fila'>3 articulos</p>
         </div>
         <div class="seccion">
             <div class="fila-superior">
@@ -165,7 +166,7 @@
                 <p>DESCUENTOS:</p>
                 <p>$ 0,00</p>
             </div>
-                <p  class='sub-fila'><a href="">Añadir Códico Promocional</a></p>
+                <p  class='sub-fila'><a href="">Añadir Código Promocional</a></p>
         </div>
         <div class="seccion">
             <div class="fila-superior">
@@ -176,10 +177,51 @@
         </div>
         <div class="botones-de-compra">
             <button type="button" class="btn1">INICIAR SESION</button>
-            <button type="button" class="btn2">PROCESO DE PAGO COMO INVITADO</button>     
+            <button type="button" class="btn2">PAGAR COMO INVITADO</button>     
         </div>
     </div>
 </div>  
+<section class="products">
+    <div class="title" id="tittle-productdetail">
+        <h2>Productos Similares</h2>
+    </div>
+    <div class="products-top-row">
+        <article>
+            <figure class="product-img">
+                <img src="/img/zapatilla1.png" alt="">
+            </figure>
+            <h3>nike air force 1</h3>
+            <p>$520</p>
+            <a href="" class="comprar">comprar</a>
+        </article>
+        <article>
+            <figure class="product-img">
+                <img src="/img/zapatilla5.png" alt="">
+            </figure>
+            <h3>adidas Performance</h3>
+            <p>$320</p>
+            <a href="" class="comprar">comprar</a>
+        </article>
+        <article>
+            <figure class="product-img">
+                <img src="/img/zapatilla3.png" alt="">
+            </figure>
+            <h3>Nike LeBron 18</h3>
+            <p>$930</p>
+            <a href="" class="comprar">comprar</a>
+
+        </article>
+        <article>
+            <figure class="product-img">
+                <img src="/img/zapatilla4.png" alt="">
+            </figure>
+            <h3>Nike Air Max 97</h3>
+            <p>$1580</p>
+            <a href="" class="comprar">comprar</a>
+
+        </article>
+    </div>
+</section>
     </main>
 
 

@@ -1,3 +1,7 @@
+main{
+    padding: 2.5vh 5vw;
+}
+
 .carrito-producto {
     margin-top: 30px;
     width: 95%;
@@ -18,11 +22,13 @@
 }
 
 .carrito-producto h3 {
-font-size: 18px;
-font-weight: bold;
+font-size: 24px;
+font-weight: 800;
+text-transform: uppercase;
 text-align: left;
 margin-left: 15px;
-margin-bottom: 2px;
+margin-top: 1em;
+margin-bottom: .5em;
 border-top: solid 2px #A0A0A0;
 margin-right: 15px;
 padding-top: 10px;
@@ -42,6 +48,13 @@ padding-top: 10px;
 }
 .titualar {
     width: 50%;
+    font-weight: 800;
+}
+
+
+.accesos .link{
+    text-decoration: none;
+    color: rgb(240, 206, 121);
 }
 
 .accesos {
@@ -59,14 +72,15 @@ padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2.5vh;
 }
 
 .titulo-carrito {
     text-align: left;
-    margin-left: 0px;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
-    width: 95%;
+    width: 100%;
+    margin-left: 1em;
 }
 .titulo-carrito p {
     text-align: left;
@@ -75,15 +89,16 @@ padding-top: 10px;
 }
 
 .completar-pago {
-    background-color: rgba(241, 241, 241, .5);
-    
-    width: 95%;
+    background-color: rgba(241, 241, 241, .3);
+    width: 90%;
     max-width: 494px;
     text-align: center;
-    border: solid 1.5px #A0A0A0;  
+    border: solid 1.5px #a0a0a088;  
     margin: auto;
     margin-top: 45px;
     margin-bottom: 35px;
+    padding: 1em;
+    height: 50%;
 }
 
 .seccion-titulo h3{
@@ -156,6 +171,18 @@ padding-top: 10px;
 
 
 @media (min-width: 730px) {
+main{
+        padding: 2.5vh 5vw;
+    }
+
+.titulo-carrito {
+        text-align: left;
+        font-size: 2.5em;
+        font-weight: bold;
+        width: 100%;
+  }
+
+    
 .carrito-producto {
     display: flex;
     flex-direction: row;   
@@ -167,10 +194,18 @@ padding-top: 10px;
     width: 50%;   
 }
 
+.completar-pago{
+    width: 90%;
+    max-width:initial;
+}
+
 .carrito-producto h3 {
     font-size: 20px;
     margin-top: 20px;
     border-top: solid 0px #A0A0A0;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: .25em;
     }
 
 #fila-1 {
@@ -199,6 +234,7 @@ padding-top: 10px;
        width: 100%;
         margin-left: 3vw;
         margin-right: 3vw;
+        max-width: 1300px;
         
     }
     .total-productos{
@@ -212,4 +248,15 @@ padding-top: 10px;
         margin-top: 30px;
         
     }
+
+    
+
+    .titulo-carrito{
+        max-width: 1300px;
+    }
+
+    .carrito-producto{
+        max-width: 800px;
+    }
+
 }

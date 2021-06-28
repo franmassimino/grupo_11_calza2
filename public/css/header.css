@@ -106,7 +106,7 @@ a{
         margin: 1.5em 0;
     }
     
-    .login{
+    .login-button{
         font-size: .75em;
         text-decoration: none;
         color: var(--negro);
@@ -114,7 +114,7 @@ a{
         transition: all .3s ease;
     }
     
-    .login:hover{
+    .login-button:hover{
         color: var(--dorado);
     }
 }
