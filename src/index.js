@@ -4,7 +4,8 @@ const path = require('path')
 const port = 3000
 
 //Server
-app.listen(port, () => console.log(`Server live on http://localhost:${port}`))
+app.set("port",process.env.PORT || port)
+app.listen(app.get("port"),() => console.log("Server live on http://localhost:"+app.get("port")))
 
 //Public files
 const publicPath = path.resolve(__dirname, '../public')
