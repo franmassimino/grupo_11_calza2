@@ -269,7 +269,7 @@ figure.product-img{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 2.5vh;
+        margin-top: 0;
     }
 
     .carrusel h1{
@@ -351,7 +351,8 @@ figure.product-img{
     /*hero*/
 
     .hero{
-        height: 70vh;
+        height: 65vh;
+        max-height: 550px;
     }
 
     .carrusel{
