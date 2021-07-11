@@ -68,6 +68,11 @@ main{
     flex-wrap: wrap;
 }
 
+a.link{
+    text-decoration: none;
+    color: black;
+}
+
 .products h2{
     font-size: 2em;
     font-weight: 800;
@@ -101,6 +106,7 @@ main{
     transition: all .3s ease;
     max-width: 260px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .products article:hover{
