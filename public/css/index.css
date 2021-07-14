@@ -335,7 +335,7 @@ figure.product-img{
     }
 
     .banners h3{
-        font-size: 3vw;
+        font-size: .75em;
     }
 
     .banners a{
@@ -381,10 +381,17 @@ figure.product-img{
     }
 
     /*banners*/
+
+    .banners{
+        margin: 5vh 0;
+        width: 100%;
+        font-size: 1em;
+    }
+
     .banners div{
         flex-direction: column;
         margin: 0;
-        height: 40vh;
+        height: 60vh;
     }
 
     .top-row-banner div{
