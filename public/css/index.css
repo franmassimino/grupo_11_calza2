@@ -408,16 +408,15 @@ figure.product-img{
 
     .products article p{
         text-align: center;
-        font-size: 1.25em;
-        letter-spacing: .1em;
     }
 
     .products article{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60%;
-        max-width: 400px;
+        width: 40%;
+        max-width: 300px;
+        padding-bottom: 1em;
     }
 
     .products h3{
