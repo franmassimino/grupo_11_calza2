@@ -14,39 +14,8 @@
     <title>Iniciar Sesión | CALZA2</title>
 </head>
 <body>
-    <header>
-        <nav class="desktop-nav">
-            <div class="logo">
-                <a href="/"><img src="/img/logo.svg" alt="logo"></a>
-            </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Productos</a></li>
-                <li><a href="/">Contacto</a></li>
-                <li><a href="/">Acerca de</a></li>
-            </ul>
-            <div class="right-content">
-                <div class="icons">
-                    <i class="fas fa-search"></i>
-                    <a href="/product-cart"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="/login"><i class="fas fa-user"></i></a>
-                </div>
-                <a href="/login" class="login-button">Iniciar sesión / registrarse</a>
-            </div>
-        </nav>
-        <nav class="mobile-nav">
-            <div class="navigation-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-            <figure class="logo">
-                <a href="/"><img src="/img/logo.svg" alt="logo"></a>
-            </figure>
-            <div class="icons">
-                <i class="fas fa-shopping-cart"></i>
-                <i class="fas fa-search"></i>
-            </div>
-        </nav>
-    </header>
+
+    <%- include('./partials/header')  %> 
 
     <main>
         <div class="form-container">
@@ -97,69 +66,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="desktop-footer">
-            <div class="left-footer">
-                <nav class="footer-navs">
-                    <ul class="nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Productos</a></li>
-                        <li><a href="/">Contacto</a></li>
-                        <li><a href="/">Acerca de</a></li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="/">Zapatillas para hombre</a></li>
-                        <li><a href="/">Zapatillas para mujer</a></li>
-                        <li><a href="/">Zapatillas para niño</a></li>
-                        <li><a href="/">Ofertas</a></li>
-                    </ul>  
-                    <ul id="last" class="nav">
-                        <li><a href="/">Lo mejor de Nike</a></li>
-                        <li><a href="/">Lo mejor de Adidas</a></li>
-                        <li><a href="/">Lo mejor de Puma</a></li>
-                        <li><a href="/">Lo mejor de Fila</a></li>
-                    </ul>  
-                </nav>
-                <p>Copyright © 2021 CALZA2</p>
-            </div>
-            <div class="right-footer">
-                <form action="">
-                    <h3>Suscribase a nuestro newsletter</h3>
-                    <input type="text" name="email" placeholder="Escriba su email">
-                    <button type="submit">Enviar</button>
-                </form> 
-            </div>
-        </div>
-        <div class="mobile-footer">
-            <nav class="footer-navs">
-                <ul class="left-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Productos</a></li>
-                    <li><a href="/">Contacto</a></li>
-                    <li><a href="/">Acerca de</a></li>
-                </ul>
-                <ul class="right-nav">
-                    <li><a href="/">Zapatillas para hombre</a></li>
-                    <li><a href="/">Zapatillas para mujer</a></li>
-                    <li><a href="/">Zapatillas para niño</a></li>
-                    <li><a href="/">Ofertas</a></li>
-                </ul>  
-            </nav>   
-            <form action="">
-                <h3>Suscribase a nuestro newsletter</h3>
-                <input type="text" name="email" placeholder="Escriba su email">
-                <button type="submit">Enviar</button>
-            </form> 
-            <div class="bottom-footer">
-                <div class="bottom-footer-links">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <p>Copyright © 2021 CALZA2</p>
-            </div>
-        </div>
-    </footer>
+    <%- include('./partials/footer')  %> 
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script>

@@ -1,20 +1,15 @@
 const express = require('express')
 const app = express.Router()
 const path = require('path')
+const mainController = require('../controllers/mainController')
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/index.html'))
-})
-app.get('/detail', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
-})
+app.get('/', mainController.index)
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/login.html'))
-})
-app.get('/cart', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
-})
+app.get('/detail', mainController.productDetail)
+
+app.get('/login', mainController.login)
+
+app.get('/cart', mainController.productCart)
 
 
 

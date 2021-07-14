@@ -40,6 +40,10 @@ main{
     font-size: 4em;
     margin-bottom: 1em;
 }
+.carrusel-link{
+    text-decoration: none;
+    color: white;
+}
 
 .carrusel .cta{
     position: absolute;
@@ -400,6 +404,12 @@ figure.product-img{
 
     .products div{
         margin-bottom: 0;
+    }
+
+    .products article p{
+        text-align: center;
+        font-size: 1.25em;
+        letter-spacing: .1em;
     }
 
     .products article{
