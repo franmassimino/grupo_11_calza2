@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    box-sizing: border-box;
+    padding: 1em 5%;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'montserrat';
+    text-transform: uppercase;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--negro);
+    color: white;
+    width: 100%;
+    max-width: 1000px;
+    padding: 2.5em 5%;
+    box-sizing: border-box;
+}
+
+.form-container h1{
+    margin-top: 0;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 100%;
+    max-width:700px;
+}
+
+form label{
+    font-size: 1.25em;
+    margin-bottom: .8em;
+    font-weight: 600;
+}
+
+input, textarea{
+    outline: none;
+    border: none;
+    padding-left: .25em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+    
+input[type=text]{
+    height: 2em;
+    margin-bottom: 2.5em;
+}
+
+textarea{
+    height: 5em;
+    margin-bottom: 2.5em;
+}
+
+input[type=file]{
+    height: 2em;
+    margin-bottom: 2.5em;
+    font-weight: 400;
+    padding: .20em 0;
+}
+
+#categoria{
+    margin-bottom: 3em;
+    display: flex;
+    padding: 0;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+legend{
+    font-size: 1.25em;
+    margin-bottom: .75em;
+    font-weight: 600;
+
+}
+
+fieldset label{
+    font-size: 14px;
+}
+
+#colores{
+    margin-bottom: 3em;
+    display: flex;
+    padding: 0;
+    max-width: 800px;
+    flex-wrap: wrap;
+
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1em;
+}
+
+.categoria label{
+    font-weight: 300;
+}
+
+form button{
+    border-radius: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .75em;
+    font-size: 1.25em;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--dorado);
+    transition: all .3s ease;
+}
+
+form button:hover{
+    background-color: var(--dorado-oscuro);
+}
+
+@media (max-width:678px) {
+    .form-container h1{
+        font-size: 1.75em;
+    }
+
+    form label{
+        font-size: 1em;
+    }
+
+    legend{
+        font-size: 1em;
+    }
+
+    .categoria label{
+        font-weight: 300;
+        font-size: .75em;
+    }
+
+    #categoria{
+        align-items: center;
+    }
+
+    .categoria{
+        width: 100px;
+    }
+
+    form button{
+        font-size: 20px;
+    }
+    
+}
+
