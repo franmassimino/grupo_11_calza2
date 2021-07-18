@@ -4,15 +4,15 @@ const data = {
 
 module.exports = {
     index: (req, res) => {
-        res.render('index')
+        res.render('index', {title: 'Home'})
     },
     productDetail: (req, res) => {
-        res.render('productDetail')
+        res.render('productDetail', {style: 'productDetail', title: 'Nike Air Force 1'})
     },
     login: (req, res) => {
-        res.render('login')
+        res.render('login', {style: 'login', title: 'Iniciar sesión'})
     },
     productCart: (req, res) => {
-        res.render('productCart')
+        res.render('productCart', {style: 'productCart', title: 'Carrito'})
     },
 }
