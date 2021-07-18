@@ -11,6 +11,8 @@ app.get('/login', mainController.login)
 
 app.get('/cart', mainController.productCart)
 
+app.get('/create', mainController.createProduct)
+
 
 
 module.exports = app

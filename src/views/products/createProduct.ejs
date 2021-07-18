@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head') %> 
+<body>
+
+    <%- include('../partials/header')  %> 
+
+    <main>
+        <div class="form-container">
+            <h1>Crear nuevo producto</h1>
+            <form action="/" method="POST">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca">
+                <label for="modelo">modelo</label>
+                <input type="text" name="modelo" id="modelo">
+                <label for="precio">precio</label>
+                <input type="text" name="precio" id="precio">
+                <label for="descripcion">descripcion</label>
+                <textarea name="descripcion" id="descripcion"></textarea>
+                <label for="imagen">Imagen del producto</label>
+                <input type="file" id="imagen" name="imagen">
+                <fieldset id="categoria">
+                    <legend>Categoria</legend>
+                    <fieldset class="categoria">
+                        <label for="running">running</label>
+                        <input type="checkbox" id="running" name="categoria" value="running">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="urbanas">urbanas</label>
+                        <input type="checkbox" id="urbanas" name="categoria" value="urbanas">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="diseñador">diseñador</label>
+                        <input type="checkbox" id="diseñador" name="categoria" value="diseñador">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="oferta">en oferta</label>
+                        <input type="checkbox" id="oferta" name="categoria" value="oferta">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="destacada">destacada</label>
+                        <input type="checkbox" id="destacada" name="categoria" value="destacada">  
+                    </fieldset>
+                </fieldset>
+                <fieldset id="colores">
+                    <legend>Colores</legend>
+                    <fieldset class="categoria">
+                        <label for="negro">negro</label>
+                        <input type="checkbox" id="negro" name="categoria" value="negro">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="blanco">blanco</label>
+                        <input type="checkbox" id="blanco" name="categoria" value="blanco">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="rojo">rojo</label>
+                        <input type="checkbox" id="rojo" name="categoria" value="rojo">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="verde">verde</label>
+                        <input type="checkbox" id="verde" name="categoria" value="verde">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="naranja">naranja</label>
+                        <input type="checkbox" id="naranja" name="categoria" value="naranja">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="violeta">violeta</label>
+                        <input type="checkbox" id="violeta" name="categoria" value="violeta">  
+                    </fieldset>
+                    <fieldset class="categoria">
+                        <label for="gris">gris</label>
+                        <input type="checkbox" id="gris" name="categoria" value="gris">  
+                    </fieldset>
+                </fieldset>
+                <button type="submit">Crear producto</button>
+            </form>
+        </div>
+    </main>
+
+    <%- include('../partials/footer')  %> 
+
+
+</body>
+</html>

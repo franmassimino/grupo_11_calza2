@@ -15,4 +15,7 @@ module.exports = {
     productCart: (req, res) => {
         res.render('productCart', {style: 'productCart', title: 'Carrito'})
     },
+    createProduct: (req, res) => {
+        res.render('./products/createProduct', {style: 'createProduct', title: 'Crear producto'})
+    },
 }
