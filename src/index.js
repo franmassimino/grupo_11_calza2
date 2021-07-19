@@ -17,3 +17,5 @@ app.use(express.static(publicPath))
 
 //Routes
 app.use(require('./routes/main'))
+app.use(require('./routes/products'));
+app.use(require('./routes/users'));

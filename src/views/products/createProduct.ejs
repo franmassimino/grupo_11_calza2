@@ -9,16 +9,22 @@
         <div class="form-container">
             <h1>Crear nuevo producto</h1>
             <form action="/" method="POST">
+
                 <label for="marca">Marca</label>
                 <input type="text" name="marca" id="marca">
+
                 <label for="modelo">modelo</label>
                 <input type="text" name="modelo" id="modelo">
+
                 <label for="precio">precio</label>
                 <input type="text" name="precio" id="precio">
+
                 <label for="descripcion">descripcion</label>
                 <textarea name="descripcion" id="descripcion"></textarea>
+
                 <label for="imagen">Imagen del producto</label>
                 <input type="file" id="imagen" name="imagen">
+
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
                     <fieldset class="categoria">
@@ -42,6 +48,7 @@
                         <input type="checkbox" id="destacada" name="categoria" value="destacada">  
                     </fieldset>
                 </fieldset>
+
                 <fieldset id="colores">
                     <legend>Colores</legend>
                     <fieldset class="categoria">
@@ -73,6 +80,7 @@
                         <input type="checkbox" id="gris" name="categoria" value="gris">  
                     </fieldset>
                 </fieldset>
+                
                 <button type="submit">Crear producto</button>
             </form>
         </div>

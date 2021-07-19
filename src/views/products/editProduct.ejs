@@ -8,20 +8,24 @@
     <main>
         <div class="form-container">
             <h1>Editar producto</h1>
-            <div id="contImg">
-                <img src="/img/zapatilla2.png" alt="" id="imgEdit">
-            </div>
-            <input type="file" id="imagen" name="imagen">
+            <figure class="contImg">
+                <img src="/img/zapatilla1.png" alt="" class="imgEdit">
+            </figure>
             <form action="/" method="POST">
+                <label for="imagen">Actualizar imagen de producto</label>
+                <input type="file" id="imagen" name="imagen">
+
                 <label for="marca">Marca</label>
-                <input type="text" name="marca" id="marca">
+                <input type="text" value="Nike" name="marca" id="marca">
+
                 <label for="modelo">modelo</label>
-                <input type="text" name="modelo" id="modelo">
+                <input type="text" value="Air Force 1" name="modelo" id="modelo">
+
                 <label for="precio">precio</label>
-                <input type="text" name="precio" id="precio">
+                <input type="text" value="844" name="precio" id="precio">
+
                 <label for="descripcion">descripcion</label>
-                <textarea name="descripcion" id="descripcion"></textarea>
-                
+                <textarea name="descripcion" id="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eveniet perspiciatis totam labore, minima enim perferendis temporibus sunt adipisci minus animi dolore facilis reprehenderit. Laudantium quisquam corrupti impedit inventore commodi!</textarea>
                 
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
@@ -31,7 +35,7 @@
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="urbanas">urbanas</label>
-                        <input type="checkbox" id="urbanas" name="categoria" value="urbanas">  
+                        <input type="checkbox" checked id="urbanas" name="categoria" value="urbanas">  
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="diseñador">diseñador</label>
@@ -43,18 +47,19 @@
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="destacada">destacada</label>
-                        <input type="checkbox" id="destacada" name="categoria" value="destacada">  
+                        <input type="checkbox" checked id="destacada" name="categoria" value="destacada">  
                     </fieldset>
                 </fieldset>
+
                 <fieldset id="colores">
                     <legend>Colores</legend>
                     <fieldset class="categoria">
                         <label for="negro">negro</label>
-                        <input type="checkbox" id="negro" name="categoria" value="negro">  
+                        <input type="checkbox" checked id="negro" name="categoria" value="negro">  
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="blanco">blanco</label>
-                        <input type="checkbox" id="blanco" name="categoria" value="blanco">  
+                        <input type="checkbox" checked id="blanco" name="categoria" value="blanco">  
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="rojo">rojo</label>
@@ -62,11 +67,11 @@
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="verde">verde</label>
-                        <input type="checkbox" id="verde" name="categoria" value="verde">  
+                        <input type="checkbox" checked id="verde" name="categoria" value="verde">  
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="naranja">naranja</label>
-                        <input type="checkbox" id="naranja" name="categoria" value="naranja">  
+                        <input type="checkbox" checked id="naranja" name="categoria" value="naranja">  
                     </fieldset>
                     <fieldset class="categoria">
                         <label for="violeta">violeta</label>
@@ -77,6 +82,7 @@
                         <input type="checkbox" id="gris" name="categoria" value="gris">  
                     </fieldset>
                 </fieldset>
+                
                 <button type="submit">Editar producto</button>
             </form>
         </div>
