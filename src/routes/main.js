@@ -13,6 +13,6 @@ app.get('/cart', mainController.productCart)
 
 app.get('/create', mainController.createProduct)
 
-
+app.get('/edit', mainController.editProduct)
 
 module.exports = app
