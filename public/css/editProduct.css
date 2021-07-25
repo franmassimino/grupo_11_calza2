@@ -4,6 +4,7 @@
 
 main{
     box-sizing: border-box;
+    min-height: 70vh;
     padding: 1em 5%;
     padding-bottom: 2em;
     display: flex;

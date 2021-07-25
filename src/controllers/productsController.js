@@ -11,4 +11,7 @@ module.exports = {
     editProduct: (req, res) => {
         res.render('products/editProduct', { style: 'editProduct', title: 'Editar producto' })
     },
+    productList: (req, res) => {
+        res.render('products/products', {style: 'editProduct', title: 'Productos'})
+    },
 }
