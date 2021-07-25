@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Running"
+    },
+
+    {
+        "id": 2,
+        "name": "Urbanas"
+    },
+
+    {
+        "id": 3,
+        "name": "Diseñador"
+    },
+
+    {
+        "id": 4,
+        "name": "En oferta"
+    },
+
+    {
+        "id": 5,
+        "name": "Destacada"
+    }
+
+]

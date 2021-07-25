@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "Negro"
+    },
+
+    {
+        "id": 2,
+        "name": "Blanco"
+    },
+
+    {
+        "id": 3,
+        "name": "Rojo"
+    },
+
+    {
+        "id": 4,
+        "name": "Verde"
+    },
+
+    {
+        "id": 5,
+        "name": "Naranaja"
+    },
+
+    {
+        "id": 6,
+        "name": "Violeta"
+    },
+
+    {
+        "id": 7,
+        "name": "Gris"
+    }
+]
