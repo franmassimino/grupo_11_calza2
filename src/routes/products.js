@@ -2,7 +2,8 @@ const express = require('express')
 const app = express.Router()
 const path = require('path')
 const productsController = require('../controllers/productsController')
-const multer = require('multer');
+const multer = require('multer')
+
 let dest = multer.diskStorage({
     destination: function (req, file, cb) {
         let extension = path.extname(file.originalname);
@@ -14,6 +15,7 @@ let dest = multer.diskStorage({
         cb(null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
     }
 })
+const upload = multer({storage:dest})
 
 app.get('/products', productsController.productList)
 
