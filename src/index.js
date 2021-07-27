@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const method = require('method-override');
 const port = 3000
 
 //Server
@@ -10,6 +11,10 @@ app.listen(app.get("port"),() => console.log("Server live on http://localhost:"+
 //View engine
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
+
+//Config
+app.use(express.urlencoded({extended:false})) // 
+app.use(method("_method")) //
 
 //Public files
 const publicPath = path.resolve(__dirname, '../public')
