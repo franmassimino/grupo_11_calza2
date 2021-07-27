@@ -13,4 +13,5 @@ const model = {
         return resultado;
     }
 };
+
 module.exports = model;
