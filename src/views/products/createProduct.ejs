@@ -8,77 +8,41 @@
     <main>
         <div class="form-container">
             <h1>Crear nuevo producto</h1>
-            <form action="/" method="POST">
+            <form action="/products/create" method="post" enctype="multipart/form-data">
 
                 <label for="marca">Marca</label>
-                <input type="text" name="marca" id="marca">
+                <input type="text" name="marca" id="marca" required>
 
                 <label for="modelo">modelo</label>
-                <input type="text" name="modelo" id="modelo">
+                <input type="text" name="modelo" id="modelo" required>
 
                 <label for="precio">precio</label>
-                <input type="text" name="precio" id="precio">
+                <input type="text" name="precio" id="precio" required>
 
                 <label for="descripcion">descripcion</label>
-                <textarea name="descripcion" id="descripcion"></textarea>
+                <textarea name="descripcion" id="descripcion"></textarea required>
 
                 <label for="imagen">Imagen del producto</label>
-                <input type="file" id="imagen" name="imagen">
+                <input type="file" id="imagen" name="imagen" required>
 
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
-                    <fieldset class="categoria">
-                        <label for="running">running</label>
-                        <input type="checkbox" id="running" name="categoria" value="running">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="urbanas">urbanas</label>
-                        <input type="checkbox" id="urbanas" name="categoria" value="urbanas">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="diseñador">diseñador</label>
-                        <input type="checkbox" id="diseñador" name="categoria" value="diseñador">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="oferta">en oferta</label>
-                        <input type="checkbox" id="oferta" name="categoria" value="oferta">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="destacada">destacada</label>
-                        <input type="checkbox" id="destacada" name="categoria" value="destacada">  
-                    </fieldset>
+                    <% categories.forEach(category => { %>
+                        <fieldset class="categoria">
+                            <label for="<%= category.name %> "><%= category.name %> </label>
+                            <input type="checkbox" id="<%= category.name %> " name="categoria" value="<%= category.name %> ">  
+                        </fieldset>
+                    <% }) %>
                 </fieldset>
 
                 <fieldset id="colores">
                     <legend>Colores</legend>
-                    <fieldset class="categoria">
-                        <label for="negro">negro</label>
-                        <input type="checkbox" id="negro" name="categoria" value="negro">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="blanco">blanco</label>
-                        <input type="checkbox" id="blanco" name="categoria" value="blanco">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="rojo">rojo</label>
-                        <input type="checkbox" id="rojo" name="categoria" value="rojo">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="verde">verde</label>
-                        <input type="checkbox" id="verde" name="categoria" value="verde">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="naranja">naranja</label>
-                        <input type="checkbox" id="naranja" name="categoria" value="naranja">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="violeta">violeta</label>
-                        <input type="checkbox" id="violeta" name="categoria" value="violeta">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="gris">gris</label>
-                        <input type="checkbox" id="gris" name="categoria" value="gris">  
-                    </fieldset>
+                    <% colors.forEach(color => { %>
+                        <fieldset class="categoria">
+                            <label for="<%= color.name %> "><%= color.name %> </label>
+                            <input type="checkbox" id="<%= color.name %> " name="categoria" value="<%= color.name %> ">  
+                        </fieldset>
+                    <% }) %>
                 </fieldset>
                 
                 <button type="submit">Crear producto</button>

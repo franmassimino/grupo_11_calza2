@@ -27,9 +27,21 @@ main{
     justify-content: center;
     align-items: center;
     max-height: 400px;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
+img{
+    transition: all .3s ease;
+}
 
+.imgprincipal:hover img{
+    transform: scale(1.01);
+}
+
+.imgprincipal:hover{
+    transform: scale(1.005);
+}
 
 .modelo-principal h2{
     text-align: center;
@@ -37,6 +49,8 @@ main{
     font-size: 1.75em;
     font-family: 'Montserrat';
     font-weight: 800;
+    text-transform: uppercase;
+
 }
 
 .marca-principal h3{

@@ -9,47 +9,39 @@
         <div class="form-container">
             <h1>Editar producto</h1>
             <figure class="contImg">
-                <img src="/img/uploads/zapatilla1.png" alt="" class="imgEdit">
+                <img src="<%= product.img %> " alt="" class="imgEdit">
             </figure>
-            <form action="/" method="POST">
+            <form action="/products/update/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                 <label for="imagen">Actualizar imagen de producto</label>
                 <input type="file" id="imagen" name="imagen">
 
                 <label for="marca">Marca</label>
-                <input type="text" value="Nike" name="marca" id="marca">
+                <input type="text" value="<%= product.brand.name  %> " name="marca" id="marca">
 
                 <label for="modelo">modelo</label>
-                <input type="text" value="Air Force 1" name="modelo" id="modelo">
+                <input type="text" value="<%= product.model %> " name="modelo" id="modelo">
 
                 <label for="precio">precio</label>
-                <input type="text" value="844" name="precio" id="precio">
+                <input type="text" value="<%= product.price %>" name="precio" id="precio">
 
                 <label for="descripcion">descripcion</label>
-                <textarea name="descripcion" id="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eveniet perspiciatis totam labore, minima enim perferendis temporibus sunt adipisci minus animi dolore facilis reprehenderit. Laudantium quisquam corrupti impedit inventore commodi!</textarea>
+                <textarea name="descripcion" id="descripcion"><%= product.description %></textarea>
                 
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
-                    <fieldset class="categoria">
-                        <label for="running">running</label>
-                        <input type="checkbox" id="running" name="categoria" value="running">  
+                        <fieldset class="categoria">
+                            <label for="running">running</label>
+                            <input type="checkbox" id="running" name="categoria" value="running">  
+                        </fieldset>
+                        <fieldset class="categoria">
+                            <label for="urbanas">urbanas</label>
+                            <input type="checkbox" id="urbanas" name="categoria" value="urbanas">  
+                        </fieldset>
+                        <fieldset class="categoria">
+                            <label for="diseñador">diseñador</label>
+                            <input type="checkbox" id="diseñador" name="categoria" value="diseñador">  
+                        </fieldset>
                     </fieldset>
-                    <fieldset class="categoria">
-                        <label for="urbanas">urbanas</label>
-                        <input type="checkbox" checked id="urbanas" name="categoria" value="urbanas">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="diseñador">diseñador</label>
-                        <input type="checkbox" id="diseñador" name="categoria" value="diseñador">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="oferta">en oferta</label>
-                        <input type="checkbox" id="oferta" name="categoria" value="oferta">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="destacada">destacada</label>
-                        <input type="checkbox" checked id="destacada" name="categoria" value="destacada">  
-                    </fieldset>
-                </fieldset>
 
                 <fieldset id="colores">
                     <legend>Colores</legend>

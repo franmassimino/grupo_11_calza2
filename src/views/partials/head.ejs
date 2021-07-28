@@ -11,5 +11,9 @@
     <% if (title != 'Home') {%> 
     <link rel="stylesheet" href="/css/<%= style %>.css">
     <% } %> 
-    <title><%= title %>  | CALZA2</title>
+    <% if (title == 'productDetail' ) { %>
+        <title> <%= `${product.brand.name} ${product.model} | CALZA2`%> </title>
+    <% } else { %>
+        <title><%= title %>  | CALZA2</title>
+    <% } %> 
 </head>

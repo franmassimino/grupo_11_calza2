@@ -15,6 +15,7 @@ let dest = multer.diskStorage({
         cb(null, file.fieldname + '-' + Date.now()+ path.extname(file.originalname))
     }
 })
+
 const upload = multer({storage:dest})
 
 app.get('/products', productsController.productList)

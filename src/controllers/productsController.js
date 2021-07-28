@@ -15,7 +15,7 @@ module.exports = {
     productDetail: (req, res) => {
         res.render('products/productDetail', { 
             style: 'productDetail', 
-            title: 'Nike Air Force 1', 
+            title: 'productDetail', 
             product: product.one(req.params.id),
             list: product.all() 
         })
