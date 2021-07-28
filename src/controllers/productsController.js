@@ -6,7 +6,7 @@ const category = require('../models/categories');
 module.exports = {
     productList: (req, res) => {
         res.render('products/products', {
-            style: 'index', 
+            style: 'productList', 
             title: 'Productos', 
             list: product.allWithExtra()
         })
@@ -16,7 +16,8 @@ module.exports = {
         res.render('products/productDetail', { 
             style: 'productDetail', 
             title: 'Nike Air Force 1', 
-            product: product.one(req.params.id) 
+            product: product.one(req.params.id),
+            list: product.all() 
         })
     },
 

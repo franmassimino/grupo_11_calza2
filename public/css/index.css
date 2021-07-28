@@ -99,6 +99,13 @@ a.link{
     max-width: 1450px;
 }
 
+.products-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .products article{
     margin: 0 2vw;
     background-color: rgba(241, 241, 241, .5);
@@ -110,6 +117,8 @@ a.link{
     transition: all .3s ease;
     max-width: 260px;
     box-sizing: border-box;
+    margin-top: 2em;
+    height: 320px;
     width: 100%;
 }
 
@@ -311,6 +320,7 @@ figure.product-img{
     .products article{
         width: 35%;
         margin-top: 1.5em;
+        height: auto;
         max-width: 300px;
     }
 

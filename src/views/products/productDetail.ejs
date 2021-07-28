@@ -9,18 +9,18 @@
         <div class="producto-completo">       
         <div class="lado-izquierdo">
             <figure class="imgprincipal">
-                <img src="/img/uploads/zapatilla1.png" alt="principal" class="productselect">
+                <img src="<%= product.img %> " alt="principal" class="productselect">
             </figure>
         </div>
         <div class="lado-derecho">
             <div class="marca-principal">
-            <h3>NIKE</h3>
+            <h3><%= product.brand.name %> </h3>
             </div>
             <div class="modelo-principal">
-            <h2>AIR FORCE 1</h2>
+            <h2><%= product.model %> </h2>
             </div>
             <div class="precio">
-                <p>$844</p>
+                <p><%= product.price %></p>
             </div>
 
             <div class="container">
@@ -28,24 +28,12 @@
                 <h3 class="color">COLOR</h3>
           
             <ul class="lista-opciones">
-                <li class="boton-estilo">
-                    <label class="option">Blancas</label> 
-                    <input type="radio" id="selector" name="selector">                             
-                </li>
-          
-                <li class="boton-estilo"> 
-                    <label class="option">Rojas</label>
-                    <input type="radio" id="selector" name="selector">                                
-                </li>
-          
-                <li class="boton-estilo">
-                    <label class="option">Negras</label>  
-                    <input type="radio" id="selector" name="selector">                        
-                </li>
-                <li class="boton-estilo">
-                    <label class="option">Camufladas</label>
-                    <input type="radio" id="selector" name="selector">                                          
-                </li>
+                <% product.colors.forEach(color => { %>
+                    <li class="boton-estilo">
+                        <label class="option"><%= color.name %> </label> 
+                        <input type="radio" id="selector" name="selector">                             
+                    </li>
+                <% }) %>
             </ul>
             </div>
 
@@ -53,7 +41,7 @@
                 <h3>INFORMACION</h3>
             </div>
             <div class="informacion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eveniet perspiciatis totam labore, minima enim perferendis temporibus sunt adipisci minus animi dolore facilis reprehenderit. Laudantium quisquam corrupti impedit inventore commodi! 
+                <p><%= product.description %> 
                 </p>
                 <ul>
                     <li>Lorem ipsum dolor sit amet</li>
@@ -72,8 +60,7 @@
         <div class="title" id="tittle-productdetail">
             <h2>Productos Similares</h2>
         </div>
-        <div class="products-top-row">
-
+        <div class="similar-products">
             <article>
                     <a class="link" href="detail">
                     <figure class="product-img">
