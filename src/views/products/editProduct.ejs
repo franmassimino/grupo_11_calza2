@@ -16,7 +16,14 @@
                 <input type="file" id="imagen" name="imagen">
 
                 <label for="marca">Marca</label>
-                <input type="text" value="<%= product.brand.name  %> " name="marca" id="marca">
+                <select name="marca" id="marca">
+                    <option value="<%= product.brand.name %>" selected disabled>Elija una marca</option>
+                    <% brands.forEach(brand => { %>
+                        <option value="<%= brand.id %>">
+                            <%= brand.name %>
+                        </option>
+                    <% }) %>
+                </select>
 
                 <label for="modelo">modelo</label>
                 <input type="text" value="<%= product.model %> " name="modelo" id="modelo">

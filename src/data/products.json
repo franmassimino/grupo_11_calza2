@@ -1,145 +1,154 @@
 [
-    {   
-        "id": 1,
-        "brand": 1,
-        "model": "Air Force one",
-        "price": 520,
-        "description": "Las Zapatillas Nike Air Force 1 están diseñadas e inspiradas en el icónico modelo AF1, su capellada en cuero sintético te da un estilo retro y único de la marca. Su entresuela de espuma te proporciona pisadas más amortiguadas y estables, fáciles de combinar con cualquier tipo de prendas para que luzcas siempre a la moda.",
-        "img": "/img/uploads/zapatilla1.png",
-        "category": "urbanas",
-        "destacada": true,
-        "colors": [1, 2, 3, 5, 7]
-    },
-
-    {   
-        "id": 2,
-        "brand": "2",
-        "model": "Originals 11",
-        "price": 450,
-        "description": "Diseño innovador que combina lo clásico y lo moderno. Presenta una parte superior de malla suave y transpirable, perfecta para tu día a día. El sistema de lazada exclusivo aporta un toque vanguardista a tu estilo",
-        "img": "/img/uploads/zapatilla2.png",
-        "category": "running",
-        "destacada": true,
-        "colors": [3, 5, 6, 2]
-    },
-
-    {   
-        "id": 3,
-        "brand": 1,
-        "model": "Lebron 18",
-        "price": 930,
-        "description": "Con tecnología Knitposite 2.0 ligera sobre una unidad Zoom Air integral, que ayuda a mantener la velocidad necesaria para superar con facilidad a los defensas y llegar a la canasta.",
-        "img": "/img/uploads/zapatilla3.png",
-        "category": "urbanas",
-        "destacada": true,
-        "colors": [4, 6, 7, 5]
-    },
-
-    {   
-        "id": 4,
-        "brand": 1,
-        "model": "Air Max 97",
-        "price": 1580,
-        "description": "Con el mismo diseño ondulante de las originales inspirado en los trenes bala japoneses, las Nike Air Max 97 te ofrecen un look que potencia tu estilo a toda velocidad. Con la innovadora unidad Nike Air completa que revolucionó el mundo del running y nuevos colors y detalles impecables, te permiten disfrutar de la comodidad de primera clase.",
-        "img": "/img/uploads/zapatilla4.png",
-        "category": "diseñador",
-        "destacada": true,
-        "colors": [1, 3, 5, 2, 7]
-    },
-    {   
-        "id": 10,
-        "brand": 4,
-        "model": "Ray",
-        "price": 490,
-        "description": "El sneaker Fila Ray presenta una suela exterior audaz y una parte superior de tela mixta para un estilo inmejorable, diseñado con la tendencia de chunky sneakers en mente.",
-        "img": "/img/uploads/zapatilla10.png",
-        "destacada": true,
-        "category": "urbanas",
-        "colors": [1, 3, 5, 4]
-    }, 
-    
-    {   
-        "id": 5,
-        "brand": "2",
-        "model": "Performance",
-        "price": 320,
-        "description": "Con estas zapatillas adidas en tus pies podrás correr en el parque y luego tomar un café con amigos con total comodidad. Su exterior de malla ofrece transpirabilidad que mantiene tus pies frescos de la mañana a la noche. La suela tipo cupsole de caucho brinda la estabilidad necesaria para enfrentarte a todo lo que te depare el día",
-        "img": "/img/uploads/zapatilla5.png",
-        "category": "running",
-        "destacada": false,
-        "colors": [1, 2, 3, 4]
-    },
-
-    {   
-        "id": 6,
-        "brand": "2",
-        "model": "Ultra Boost 20",
-        "price": 720,
-        "description": "Prototipo tras prototipo. Innovación tras innovación. Prueba tras prueba. Uníte a nosotros en la busqueda constante de maximizar y armonizar el peso, la comodidad y en rendimiento. Ultraboost 20. Descubrí un retorno de energía increíble.",
-        "img": "/img/uploads/zapatilla6.png",
-        "category": "running",
-        "destacada": true,
-        "colors": [3, 5, 1 ,2 ]
-    },
-    {   
-        "id": 11,
-        "brand": 3,
-        "model": "Cell Venom",
-        "price": 1600,
-        "description": "Cuando la tecnología PUMA CELL apareció por primera vez en 1998, fue revolucionaria. Sus celdas hexagonales ofrecían la forma ideal para una amortiguación estable, por lo que podías moverte de forma más rápida, potente, fluida y enérgica; es decir: mejor. 20 años después, vuelve CELL. Añade un toque diferente a tu estilo urbano con estas zapatillas retro inspiradas en los 80.",
-        "img": "/img/uploads/zapatilla11.png",
-        "category": "diseñador",
-        "destacada": true,
-        "colors": [1, 3, 5, 4]
-    }, 
-    
-    {   
-        "id": 7,
-        "brand": 1,
-        "model": "Air Max 97 Essential",
-        "price": 580,
-        "description": "Las Nike Air Max 97 essential cuentan con el mismo diseño ondulado original, inspirado en los trenes de bala japoneses, para ofrecer un look que impulsa tu estilo a toda velocidad. Con la innovadora unidad Nike Air completa que revolucionó el mundo del running y nuevos colors y detalles impecables, te permiten disfrutar de la comodidad de primera clase.",
-        "img": "/img/uploads/zapatilla7.png",
-        "category": "diseñador",
-        "destacada": false,
-        "colors": [1, 2, 4, 7]
-    },
-
-    {   
-        "id": 8,
-        "brand": 1,
-        "model": "Air More Uptempo",
-        "price": 960,
-        "description": "La zapatilla Nike Air More Uptempo, lanzada por primera vez durante la era de alto vuelo del básquetbol de los 90, ha pasado de ser un ícono en la cancha a un ser un calzado urbano de manera casi imperceptible. Con su distintivo diseño de marca, su perfil de confección potente y Nike Air en la planta del pie, su lugar en la historia del calzado es indiscutible.",
-        "img": "/img/uploads/zapatilla8.png",
-        "category": "urbana",
-        "destacada": true,
-        "colors": [1, 3, 5, 4]
-    }, 
-
-    {   
-        "id": 9,
-        "brand": 3,
-        "model": "RS-X 3 Dayzero",
-        "price": 1060,
-        "description": "Creado en colaboración con UAL: Central Saint Martin. LLeva un panel superior sintético y de malla, cordones en la parte delantera, lengüeta acolchada con logotipo y detalles de color en contraste. Tirador en la parte posterior, suela de caucho y su composición es de Poliéster.",
-        "img": "/img/uploads/zapatilla9.png",
-        "category": "urbanas",
-        "destacada": false,
-        "colors": [1, 2, 4, 7]
-    }, 
-
-
-    {   
-        "id": 12,
-        "brand": 4,
-        "model": "V94M",
-        "price": 700,
-        "description": "FILA V94M un clásico modelo inspirado en los años 90. Su diseño cuenta con muchos detalles, posee una clásica silueta , su entresuela de doble espesor otorga un excelente fit a lo largo del dí­a. Confeccionado en cuero, su entresuela en EVA y su suela en caucho brinda un buen gruip y adherencia en todo tipo de superficies.",
-        "img": "/img/uploads/zapatilla12.png",
-        "category": "diseñador",
-        "destacada": false,
-        "colors": [1, 3, 5, 4]
-    }
-
+  {
+    "id": 1,
+    "brand": 1,
+    "model": "Air Force one",
+    "price": 520,
+    "description": "Las Zapatillas Nike Air Force 1 están diseñadas e inspiradas en el icónico modelo AF1, su capellada en cuero sintético te da un estilo retro y único de la marca. Su entresuela de espuma te proporciona pisadas más amortiguadas y estables, fáciles de combinar con cualquier tipo de prendas para que luzcas siempre a la moda.",
+    "img": "/img/uploads/products/zapatilla1.png",
+    "category": 2,
+    "destacada": true,
+    "color": 1
+  },
+  {
+    "id": 2,
+    "brand": 2,
+    "model": "Originals 11",
+    "price": 450,
+    "description": "Diseño innovador que combina lo clásico y lo moderno. Presenta una parte superior de malla suave y transpirable, perfecta para tu día a día. El sistema de lazada exclusivo aporta un toque vanguardista a tu estilo",
+    "img": "/img/uploads/products/zapatilla2.png",
+    "category": 1,
+    "destacada": true,
+    "color": 4
+  },
+  {
+    "id": 3,
+    "brand": 1,
+    "model": "Lebron 18",
+    "price": 930,
+    "description": "Con tecnología Knitposite 2.0 ligera sobre una unidad Zoom Air integral, que ayuda a mantener la velocidad necesaria para superar con facilidad a los defensas y llegar a la canasta.",
+    "img": "/img/uploads/products/zapatilla3.png",
+    "category": 2,
+    "destacada": true,
+    "color": 4
+  },
+  {
+    "id": 4,
+    "brand": 1,
+    "model": "Air Max 97",
+    "price": 1580,
+    "description": "Con el mismo diseño ondulante de las originales inspirado en los trenes bala japoneses, las Nike Air Max 97 te ofrecen un look que potencia tu estilo a toda velocidad. Con la innovadora unidad Nike Air completa que revolucionó el mundo del running y nuevos color y detalles impecables, te permiten disfrutar de la comodidad de primera clase.",
+    "img": "/img/uploads/products/zapatilla4.png",
+    "category": 3,
+    "destacada": true,
+    "color": 1
+  },
+  {
+    "id": 10,
+    "brand": 4,
+    "model": "Ray",
+    "price": 490,
+    "description": "El sneaker Fila Ray presenta una suela exterior audaz y una parte superior de tela mixta para un estilo inmejorable, diseñado con la tendencia de chunky sneakers en mente.",
+    "img": "/img/uploads/products/zapatilla10.png",
+    "destacada": true,
+    "category": 2,
+    "color": 1
+  },
+  {
+    "id": 5,
+    "brand": 2,
+    "model": "Performance",
+    "price": 320,
+    "description": "Con estas zapatillas adidas en tus pies podrás correr en el parque y luego tomar un café con amigos con total comodidad. Su exterior de malla ofrece transpirabilidad que mantiene tus pies frescos de la mañana a la noche. La suela tipo cupsole de caucho brinda la estabilidad necesaria para enfrentarte a todo lo que te depare el día",
+    "img": "/img/uploads/products/zapatilla5.png",
+    "category": 1,
+    "destacada": false,
+    "color": 1
+  },
+  {
+    "id": 6,
+    "brand": 2,
+    "model": "Ultra Boost 20",
+    "price": 720,
+    "description": "Prototipo tras prototipo. Innovación tras innovación. Prueba tras prueba. Uníte a nosotros en la busqueda constante de maximizar y armonizar el peso, la comodidad y en rendimiento. Ultraboost 20. Descubrí un retorno de energía increíble.",
+    "img": "/img/uploads/products/zapatilla6.png",
+    "category": 1,
+    "destacada": true,
+    "color": 3
+  },
+  {
+    "id": 11,
+    "brand": 3,
+    "model": "Cell Venom",
+    "price": 1600,
+    "description": "Cuando la tecnología PUMA CELL apareció por primera vez en 1998, fue revolucionaria. Sus celdas hexagonales ofrecían la forma ideal para una amortiguación estable, por lo que podías moverte de forma más rápida, potente, fluida y enérgica; es decir: mejor. 20 años después, vuelve CELL. Añade un toque diferente a tu estilo urbano con estas zapatillas retro inspiradas en los 80.",
+    "img": "/img/uploads/products/zapatilla11.png",
+    "category": 3,
+    "destacada": true,
+    "color": 1
+  },
+  {
+    "id": 7,
+    "brand": 1,
+    "model": "Air Max 97 Essential",
+    "price": 580,
+    "description": "Las Nike Air Max 97 essential cuentan con el mismo diseño ondulado original, inspirado en los trenes de bala japoneses, para ofrecer un look que impulsa tu estilo a toda velocidad. Con la innovadora unidad Nike Air completa que revolucionó el mundo del running y nuevos color y detalles impecables, te permiten disfrutar de la comodidad de primera clase.",
+    "img": "/img/uploads/products/zapatilla7.png",
+    "category": 3,
+    "destacada": false,
+    "color": 1
+  },
+  {
+    "id": 8,
+    "brand": 1,
+    "model": "Air More Uptempo",
+    "price": 960,
+    "description": "La zapatilla Nike Air More Uptempo, lanzada por primera vez durante la era de alto vuelo del básquetbol de los 90, ha pasado de ser un ícono en la cancha a un ser un calzado urbano de manera casi imperceptible. Con su distintivo diseño de marca, su perfil de confección potente y Nike Air en la planta del pie, su lugar en la historia del calzado es indiscutible.",
+    "img": "/img/uploads/products/zapatilla8.png",
+    "category": "urbana",
+    "destacada": true,
+    "color": 1
+  },
+  {
+    "id": 9,
+    "brand": 3,
+    "model": "RS-X 3 Dayzero",
+    "price": 1060,
+    "description": "Creado en colaboración con UAL: Central Saint Martin. LLeva un panel superior sintético y de malla, cordones en la parte delantera, lengüeta acolchada con logotipo y detalles de color en contraste. Tirador en la parte posterior, suela de caucho y su composición es de Poliéster.",
+    "img": "/img/uploads/products/zapatilla9.png",
+    "category": 2,
+    "destacada": false,
+    "color": 1
+  },
+  {
+    "id": 12,
+    "brand": 4,
+    "model": "V94M",
+    "price": 700,
+    "description": "FILA V94M un clásico modelo inspirado en los años 90. Su diseño cuenta con muchos detalles, posee una clásica silueta , su entresuela de doble espesor otorga un excelente fit a lo largo del dí­a. Confeccionado en cuero, su entresuela en EVA y su suela en caucho brinda un buen gruip y adherencia en todo tipo de superficies.",
+    "img": "/img/uploads/products/zapatilla12.png",
+    "category": 3,
+    "destacada": false,
+    "color": 1
+  },
+  {
+    "id": 13,
+    "brand": 3,
+    "model": "Air caca",
+    "price": 222,
+    "description": "Esta es una zapatilla de prueba",
+    "img": "/img/uploads/products/imagen-1627860247488.png",
+    "category": 1,
+    "color": 5
+  },
+  {
+    "id": 14,
+    "brand": 3,
+    "model": "Puma",
+    "price": 2838382,
+    "description": "Lorem impsu,m df<ef daewfEF ewrfWEFwef WEFwef ",
+    "img": "/img/uploads/products/imagen-1627860785729.png",
+    "category": 2,
+    "color": 1
+  }
 ]

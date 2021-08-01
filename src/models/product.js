@@ -18,10 +18,10 @@ const model = {
             element.brand = brandModel.one(element.brand)
             return element
         }).map(element => {
-            element.colors = element.colors.map(color => {
-                color = colorModel.one(color)
-                return color
-            })
+            element.color = colorModel.one(element.color)
+            return element
+        }).map(element => {
+            element.category = categoryModel.one(element.category)
             return element
         })
         return productos;
@@ -38,10 +38,13 @@ const model = {
         let productos = this.all();
         let nuevo = {
             id: productos.length > 0 ? productos[productos.length - 1].id + 1 : 1,
-            name: data.name,
-            brand: parseInt(data.brand),
-            colors: data.colors.map(color => parseInt(color)),
-            image: file.filename
+            brand: parseInt(data.marca),
+            model: data.modelo,
+            price: parseInt(data.precio),
+            description: data.descripcion,
+            img: `/img/uploads/products/${file.filename}`,
+            category: parseInt(data.categoria),
+            color: parseInt(data.colores),
         }
         productos.push(nuevo)
         fs.writeFileSync(directory, JSON.stringify(productos, null, 2));

@@ -24,17 +24,8 @@
             </div>
 
             <div class="container">
-	
                 <h3 class="color">COLOR</h3>
-          
-            <ul class="lista-opciones">
-                <% product.colors.forEach(color => { %>
-                    <li class="boton-estilo">
-                        <label class="option"><%= color.name %> </label> 
-                        <input type="radio" id="selector" name="selector">                             
-                    </li>
-                <% }) %>
-            </ul>
+                <p><%= product.color.name %> </p>
             </div>
 
             <div class="titulo-informacion">
@@ -44,9 +35,9 @@
                 <p><%= product.description %> 
                 </p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Aperiam, eveniet perspiciatis totam labore</li>
-                    <li>minima enim perferendis temporibus sunt</li>
+                    <li>Todas las zapatillas tienen reembolso</li>
+                    <li>Hasta 15% de descuento pagando en efectivo</li>
+                    <li>10% de descuento en la segunda unidad</li>
                 </ul>
             </div>
             <div class="botones-de-compra">
@@ -64,7 +55,7 @@
             <article>
                     <a class="link" href="/products/detail/5">
                     <figure class="product-img">
-                        <img src="/img/uploads/zapatilla5.png" alt="">
+                        <img src="/img/uploads/products/zapatilla5.png" alt="">
                     </figure>
                     <h3>adidas performance</h3>
                     <p>$520</p>
@@ -75,7 +66,7 @@
                 <article>
                     <a class="link" href="/products/detail/2">
                     <figure class="product-img">
-                        <img src="/img/uploads/zapatilla2.png" alt="">
+                        <img src="/img/uploads/products/zapatilla2.png" alt="">
                     </figure>
                     <h3>adidas Originals 11</h3>
                     <p>$450</p>
@@ -86,7 +77,7 @@
                 <article>
                     <a class="link" href="/products/detail/3">
                     <figure class="product-img">
-                        <img src="/img/uploads/zapatilla3.png" alt="">
+                        <img src="/img/uploads/products/zapatilla3.png" alt="">
                     </figure>
                     <h3>Nike LeBron 18</h3>
                     <p>$930</p>
@@ -97,7 +88,7 @@
                 <article>
                     <a class="link" href="/products/detail/4">
                     <figure class="product-img">
-                        <img src="/img/uploads/zapatilla4.png" alt="">
+                        <img src="/img/uploads/products/zapatilla4.png" alt="">
                     </figure>
                     <h3>Nike Air Max 97</h3>
                     <p>$1580</p>

@@ -8,10 +8,17 @@
     <main>
         <div class="form-container">
             <h1>Crear nuevo producto</h1>
-            <form action="/products/create" method="post" enctype="multipart/form-data">
+            <form action="/products/save" method="POST" enctype="multipart/form-data">
 
                 <label for="marca">Marca</label>
-                <input type="text" name="marca" id="marca" required>
+                <select name="marca" id="marca">
+                    <option value="" selected disabled>Elija una marca</option>
+                    <% brands.forEach(brand => { %>
+                        <option value="<%= brand.id %>">
+                            <%= brand.name %>
+                        </option>
+                    <% }) %>
+                </select>
 
                 <label for="modelo">modelo</label>
                 <input type="text" name="modelo" id="modelo" required>
@@ -27,22 +34,26 @@
 
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
-                    <% categories.forEach(category => { %>
-                        <fieldset class="categoria">
-                            <label for="<%= category.name %> "><%= category.name %> </label>
-                            <input type="checkbox" id="<%= category.name %> " name="categoria" value="<%= category.name %> ">  
-                        </fieldset>
-                    <% }) %>
+                    <select name="categoria" class="categoria">
+                        <option value="" selected disabled>Elija una categoria</option>
+                        <% categories.forEach(category => { %>
+                            <option value="<%= category.id %>">
+                                <%= category.name %>
+                            </option>
+                        <% }) %>
+                    </select>
                 </fieldset>
 
                 <fieldset id="colores">
-                    <legend>Colores</legend>
-                    <% colors.forEach(color => { %>
-                        <fieldset class="categoria">
-                            <label for="<%= color.name %> "><%= color.name %> </label>
-                            <input type="checkbox" id="<%= color.name %> " name="categoria" value="<%= color.name %> ">  
-                        </fieldset>
-                    <% }) %>
+                    <legend>Color</legend>
+                    <select name="colores" class="colores">
+                        <option value="" selected disabled>Elija un color</option>
+                        <% colors.forEach(color => { %>
+                            <option value="<%= color.id %>">
+                                <%= color.name %>
+                            </option>
+                        <% }) %>
+                    </select>
                 </fieldset>
                 
                 <button type="submit">Crear producto</button>

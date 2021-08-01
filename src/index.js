@@ -24,3 +24,7 @@ app.use(express.static(publicPath))
 app.use(require('./routes/main'))
 app.use(require('./routes/products'));
 app.use(require('./routes/users'));
+
+app.use((req, res, next) => {
+    res.status(404).send('<h1>Esta página todavia no existe :(</h1>')
+})

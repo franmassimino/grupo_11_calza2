@@ -64,6 +64,10 @@ input[type=text]{
     margin-bottom: 2.5em;
 }
 
+select{
+    margin-bottom: 2.5em;
+}
+
 textarea{
     height: 7em;
     margin-bottom: 2.5em;

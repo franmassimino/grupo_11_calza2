@@ -85,6 +85,13 @@ img{
     font-family: 'Montserrat';
     font-weight: 700;
     margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.container p{
+    font-family: 'roboto';
+    font-size: 15px;
+    margin-top: 0;
 }
 
 .titulo-informacion h3{
@@ -95,11 +102,10 @@ img{
     font-size: 1em;
     font-family: 'Montserrat';
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .informacion {
-    
     text-align: center;
     text-align: justify;
     margin-right: 5%;
