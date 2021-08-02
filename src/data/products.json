@@ -119,5 +119,16 @@
     "category": 2,
     "destacada": false,
     "color": 1
+  },
+  {
+    "id": 12,
+    "brand": 4,
+    "model": "V94M",
+    "price": 700,
+    "description": "FILA V94M un clásico modelo inspirado en los años 90. Su diseño cuenta con muchos detalles, posee una clásica silueta , su entresuela de doble espesor otorga un excelente fit a lo largo del dí­a. Confeccionado en cuero, su entresuela en EVA y su suela en caucho brinda un buen gruip y adherencia en todo tipo de superficies.",
+    "img": "/img/uploads/products/zapatilla12.png",
+    "category": 3,
+    "destacada": false,
+    "color": 1
   }
 ]
