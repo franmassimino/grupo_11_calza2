@@ -130,25 +130,5 @@
     "category": 3,
     "destacada": false,
     "color": 1
-  },
-  {
-    "id": 13,
-    "brand": 3,
-    "model": "Air caca",
-    "price": 222,
-    "description": "Esta es una zapatilla de prueba",
-    "img": "/img/uploads/products/imagen-1627860247488.png",
-    "category": 1,
-    "color": 5
-  },
-  {
-    "id": 14,
-    "brand": 3,
-    "model": "Puma",
-    "price": 2838382,
-    "description": "Lorem impsu,m df<ef daewfEF ewrfWEFwef WEFwef ",
-    "img": "/img/uploads/products/imagen-1627860785729.png",
-    "category": 2,
-    "color": 1
   }
 ]

@@ -55,13 +55,17 @@ const model = {
         const directory = path.resolve(__dirname, "../data", "products.json")
         let productos = this.all();
         let updated = this.one(id);
-        fs.unlinkSync(path.resolve(__dirname, "../../public/uploads/products", updated.image))
+        /* let imgPath = path.resolve(__dirname, "../../public/img/uploads/products") */
+        fs.unlinkSync(path.join(__dirname, "../../public", updated.img))
         productos.map(producto => {
             if (producto.id == id) {
-                producto.name = data.name,
-                    producto.brand = parseInt(data.brand),
-                    producto.colors = data.colors.map(color => parseInt(color)),
-                    producto.image = file.filename
+                producto.model = data.modelo,
+                producto.brand = parseInt(data.marca),
+                producto.color = parseInt(data.colores),
+                producto.img = `/img/uploads/products/${file.filename}`
+                producto.price = parseInt(data.precio)
+                producto.category = parseInt(data.categoria),
+                producto.description = data.descripcion
                 return producto
             }
             return producto

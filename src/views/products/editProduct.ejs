@@ -17,7 +17,7 @@
 
                 <label for="marca">Marca</label>
                 <select name="marca" id="marca">
-                    <option value="<%= product.brand.name %>" selected disabled>Elija una marca</option>
+                    <option value="<%= product.brand.name %>" selected disabled><%= product.brand.name %></option>
                     <% brands.forEach(brand => { %>
                         <option value="<%= brand.id %>">
                             <%= brand.name %>
@@ -36,50 +36,26 @@
                 
                 <fieldset id="categoria">
                     <legend>Categoria</legend>
-                        <fieldset class="categoria">
-                            <label for="running">running</label>
-                            <input type="checkbox" id="running" name="categoria" value="running">  
-                        </fieldset>
-                        <fieldset class="categoria">
-                            <label for="urbanas">urbanas</label>
-                            <input type="checkbox" id="urbanas" name="categoria" value="urbanas">  
-                        </fieldset>
-                        <fieldset class="categoria">
-                            <label for="diseñador">diseñador</label>
-                            <input type="checkbox" id="diseñador" name="categoria" value="diseñador">  
-                        </fieldset>
-                    </fieldset>
+                    <select name="categoria" class="categoria">
+                        <option value="<%= product.category.name %>" selected disabled><%= product.category.name %></option>
+                        <% categories.forEach(category => { %>
+                            <option value="<%= category.id %>">
+                                <%= category.name %>
+                            </option>
+                        <% }) %>
+                    </select>
+                </fieldset>
 
                 <fieldset id="colores">
-                    <legend>Colores</legend>
-                    <fieldset class="categoria">
-                        <label for="negro">negro</label>
-                        <input type="checkbox" checked id="negro" name="categoria" value="negro">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="blanco">blanco</label>
-                        <input type="checkbox" checked id="blanco" name="categoria" value="blanco">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="rojo">rojo</label>
-                        <input type="checkbox" id="rojo" name="categoria" value="rojo">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="verde">verde</label>
-                        <input type="checkbox" checked id="verde" name="categoria" value="verde">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="naranja">naranja</label>
-                        <input type="checkbox" checked id="naranja" name="categoria" value="naranja">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="violeta">violeta</label>
-                        <input type="checkbox" id="violeta" name="categoria" value="violeta">  
-                    </fieldset>
-                    <fieldset class="categoria">
-                        <label for="gris">gris</label>
-                        <input type="checkbox" id="gris" name="categoria" value="gris">  
-                    </fieldset>
+                    <legend>Color</legend>
+                    <select name="colores" class="colores">
+                        <option value="<%= product.color.name %>" selected disabled><%= product.color.name %></option>
+                        <% colors.forEach(color => { %>
+                            <option value="<%= color.id %>">
+                                <%= color.name %>
+                            </option>
+                        <% }) %>
+                    </select>
                 </fieldset>
                 
                 <button type="submit">Editar producto</button>

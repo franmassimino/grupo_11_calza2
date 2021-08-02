@@ -9,7 +9,7 @@
         <div class="producto-completo">       
         <div class="lado-izquierdo">
             <figure class="imgprincipal">
-                <img src="<%= product.img %> " alt="principal" class="productselect">
+                <img src="<%= product.img %>" alt=<%= `${product.brand.name}-${product.model}` %>  class="productselect">
             </figure>
         </div>
         <div class="lado-derecho">
