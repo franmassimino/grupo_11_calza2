@@ -60,6 +60,9 @@
                 
                 <button type="submit">Editar producto</button>
             </form>
+            <form action="/products/delete/<%= product.id %>?_method=DELETE" method="post">
+                <button class="delete" type="submit">Eliminar producto</button>
+            </form>
         </div>
     </main>
 

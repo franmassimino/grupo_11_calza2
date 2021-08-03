@@ -12,7 +12,7 @@ app.listen(app.get("port"),() => console.log("Server live on http://localhost:"+
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
-//Config
+//Middlewares
 app.use(express.urlencoded({extended:false})) // 
 app.use(method("_method")) //
 

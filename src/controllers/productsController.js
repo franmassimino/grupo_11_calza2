@@ -51,12 +51,12 @@ module.exports = {
 
     saveProduct: (req, res) => {
         let result = product.new(req.body, req.file)
-        return result == true ? res.redirect("/") : res.send("Error al cargar la informacion")   
+        return result == true ? res.redirect('/products') : res.send("Error al cargar la informacion")   
     },
 
     updateProduct: (req, res) => {
         let result = product.edit(req.body, req.file, req.params.id)
-        return result == true ? res.redirect("/") : res.send("Error al cargar la informacion") 
+        return result == true ? res.redirect('/products') : res.send("Error al cargar la informacion") 
     },
 
     deleteProduct: (req, res) => {

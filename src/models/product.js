@@ -55,7 +55,6 @@ const model = {
         const directory = path.resolve(__dirname, "../data", "products.json")
         let productos = this.all();
         let updated = this.one(id);
-        /* let imgPath = path.resolve(__dirname, "../../public/img/uploads/products") */
         fs.unlinkSync(path.join(__dirname, "../../public", updated.img))
         productos.map(producto => {
             if (producto.id == id) {
@@ -78,8 +77,11 @@ const model = {
         const directory = path.resolve(__dirname, "../data", "products.json")
         let productos = this.all();
         let deleted = this.one(id);
-        fs.unlinkSync(path.resolve(__dirname, "../../public/uploads/products", deleted.image))
         productos = productos.filter(producto => producto.id != deleted.id)
+        let imgPath = path.join(__dirname, "../../public", deleted.img)
+        if (fs.existsSync(imgPath)){
+            fs.unlinkSync(imgPath)
+        } 
         fs.writeFileSync(directory, JSON.stringify(productos, null, 2));
         return true;
     }
