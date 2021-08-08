@@ -191,7 +191,12 @@ img{
 
 .botones-de-compra {
     text-align: center;
-    
+}
+
+.similar-products{
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (min-width: 1024px) {
