@@ -13,7 +13,8 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 //Middlewares
-app.use(express.urlencoded({extended:false})) // 
+app.use(express.urlencoded({extended: true})) 
+app.use(express.json())
 app.use(method("_method")) //
 
 //Public files
