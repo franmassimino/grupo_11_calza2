@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 
 module.exports = {
   dir: path.resolve(__dirname, "../data", "users.json"),
+
   write: function (data) {
     return fs.writeFileSync(this.dir, JSON.stringify(data, null, 2));
   },
@@ -25,16 +26,10 @@ module.exports = {
     let lastUser = users[users.length - 1];
     let newUser = {
       id: users.length > 0 ? lastUser.id + 1 : 1,
-      user: data.user
-        ? data.user
-        : String(data.email)
-            .trim()
-            .replace(/\s/g, "")
-            .split("@")[0]
-            .toLowerCase(),
+      user: data.user, 
       email: String(data.email),
       password: bcrypt.hashSync(data.password, 10),
-      img: `/img/uploads/users/${file.filename}`,
+      img: file ? `/img/uploads/users/${file.filename}` : '/img/uploads/users/default.png',
     };
     users.push(newUser);
     this.write(users);
@@ -52,13 +47,8 @@ module.exports = {
               .split("@")[0]
               .toLowerCase();
         user.email = String(data.email);
-        user.admin =
-          String(data.email).includes("@digitalhouse") ||
-          user.data.email.include("@dh")
-            ? true
-            : false;
         user.password = bcrypt.hashSync(data.password, 10);
-        user.avatar = file ? file.filename : null;
+        user.img = file ? file.filename : null;
         return user;
       }
       return user;

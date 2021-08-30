@@ -1,21 +1,23 @@
 const { validationResult } = require("express-validator");
-const userModel = require('../models/user');
+const userModel = require("../models/user");
 
 module.exports = {
   login: (req, res) => {
     res.render("users/login", { style: "login", title: "Iniciar sesión" });
   },
+
   processLogin: (req, res) => {
     const errors = validationResult(req);
-    if (errors.errors.length > 0) {
-      res.send(errors.mapped());
+    if (!errors.isEmpty()) {
+      res.status(404).send("<h1>Algo salio mal(</h1>");
     } else {
       let user = userModel.findByEmail(req.body.email);
-      user ?
-      res.redirect("/") : res.send("Error al cargar la informacion")
-      /* req.session.user = user; */
+      delete user.password;
+      req.session.user = user;
+      user ? res.redirect("/") : res.send("Error al cargar la informacion");
     }
   },
+
   processRegister: (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -26,11 +28,11 @@ module.exports = {
       return res.redirect("/users/login");
     }
   },
-  profile:(req,res) => res.render("users/profile",{title:"Perfil"}),
-  logout: (req,res) => {
+
+  profile: (req, res) => res.render("users/profile", { title: "Perfil" }),
+  
+  logout: (req, res) => {
     delete req.session.user;
-    return res.redirect("/")
-  }
-
-
+    return res.redirect("/");
+  },
 };

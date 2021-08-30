@@ -3,6 +3,7 @@ const app = express.Router()
 const path = require('path')
 const usersController = require('../controllers/usersController')
 const isLogged = require('../middlewares/logged')
+const auth = require('../middlewares/auth')
 
 //Multer
 const multer = require('multer')
@@ -14,11 +15,11 @@ const registerValidation = require('../middlewares/register')
 const loginValidation = require('../middlewares/login')
 
 
-app.get('/users/login', usersController.login)
+app.get('/users/login', auth,  usersController.login)
 
-app.get("/users/profile", [isLogged] , usersController.profile)
+app.get("/users/profile", isLogged , usersController.profile)
 
-app.get("/users/logout", [isLogged] , usersController.logout)
+app.get("/users/logout", usersController.logout)
 
 app.post('/users/processRegister', upload.single('imagen'), usersController.processRegister)
 
