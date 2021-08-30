@@ -9,7 +9,8 @@ module.exports = {
   processLogin: (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      res.status(404).send("<h1>Algo salio mal(</h1>");
+      console.log(errors);  
+      res.status(404).send("<h1>Algo salio mal :(</h1>")
     } else {
       let user = userModel.findByEmail(req.body.email);
       delete user.password;
