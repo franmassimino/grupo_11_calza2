@@ -1,3 +1,9 @@
 [
-  
+  {
+    "id": 1,
+    "user": "francisco123",
+    "email": "franmassi1904@gmail.com",
+    "password": "$2b$10$sJdl8BaHJzNEBO5SsbvWbu3cVgXnFz/dVOVcBnoiu/xlSPMT/BOxu",
+    "img": "/img/uploads/users/default.png"
+  }
 ]

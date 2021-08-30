@@ -29,7 +29,7 @@ module.exports = {
     }
   },
 
-  profile: (req, res) => res.render("users/profile", { title: "Perfil" }),
+  profile: (req, res) => res.render("users/profile", { title: "Perfil", user: req.session.user }),
   
   logout: (req, res) => {
     delete req.session.user;

@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Profile</h1>
+    <h1><%= locals.user.user %> </h1>
+    <p><%= locals.user.email %></p>
+    <img src="<%= locals.user.img %>" alt="">
 </body>
 </html>
