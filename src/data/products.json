@@ -105,7 +105,7 @@
     "price": 960,
     "description": "La zapatilla Nike Air More Uptempo, lanzada por primera vez durante la era de alto vuelo del básquetbol de los 90, ha pasado de ser un ícono en la cancha a un ser un calzado urbano de manera casi imperceptible. Con su distintivo diseño de marca, su perfil de confección potente y Nike Air en la planta del pie, su lugar en la historia del calzado es indiscutible.",
     "img": "/img/uploads/products/zapatilla8.png",
-    "category": "urbana",
+    "category": 3,
     "destacada": true,
     "color": 1
   },

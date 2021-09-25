@@ -11,6 +11,8 @@ const upload = multer({storage: storage("products")})
 
 app.get('/products', productsController.productList)
 
+app.get('/caca', productsController.index)
+
 app.get('/products/detail/:id', productsController.productDetail)
 
 app.get('/products/cart', productsController.productCart)

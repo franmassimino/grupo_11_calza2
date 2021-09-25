@@ -1,3 +1,37 @@
 [
-
+  {
+    "id": 1,
+    "user": "Francisco",
+    "email": "franmassi1904@gmail.com",
+    "password": "$2b$10$s/bPioo3qGRzWXv.tYOzwOoXh1l4dSZuQl0tAYYi00M5/NxgFwWBW",
+    "img": "/img/uploads/users/default.png"
+  },
+  {
+    "id": 2,
+    "user": "",
+    "email": "",
+    "password": "$2b$10$c52wQgrxfaUmO/aDCcqBt.Z4dms5vcijR8vasPDjUuhwUtSRAtk0S",
+    "img": "/img/uploads/users/default.png"
+  },
+  {
+    "id": 3,
+    "user": "Francisco",
+    "email": "DIEGOMASSIMINO@HOTMAIL.COM",
+    "password": "$2b$10$FDrKmy4O8UblZnDqWLJop.AvkMHWysZ01Kwi3oNBpnYVGJA5UZhsu",
+    "img": "/img/uploads/users/default.png"
+  },
+  {
+    "id": 4,
+    "user": "",
+    "email": "",
+    "password": "$2b$10$vGmUVFSoBRqDYTl0mSWVxu.BZbJaxgM1Lu9ieSrrxcagTjGq0Yiba",
+    "img": "/img/uploads/users/default.png"
+  },
+  {
+    "id": 5,
+    "user": "dsds",
+    "email": "massiminos@hotmail.com",
+    "password": "$2b$10$WVil/KeTSNfhEXM7J8Hj8.Qm.1SSGdRPz.wjr/yU/4DkGqn1aUg8e",
+    "img": "/img/uploads/users/imagen-1632603316268.png"
+  }
 ]

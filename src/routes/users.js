@@ -19,6 +19,8 @@ app.get('/users/login', auth,  usersController.login)
 
 app.get("/users/profile", isLogged , usersController.profile)
 
+app.get('/users/register', auth,  usersController.register)
+
 app.get("/users/logout", usersController.logout)
 
 app.post('/users/processRegister', upload.single('imagen'), usersController.processRegister)

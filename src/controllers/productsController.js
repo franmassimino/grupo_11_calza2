@@ -2,8 +2,13 @@ const product = require('../models/product');
 const color = require('../models/color');
 const brand = require('../models/brand');
 const category = require('../models/categories');
+const db = require('../database/models/index')
+const {Product} = db
 
 module.exports = {
+    index: (req, res) => {
+        return Product.findAll().then(data => res.send(data)).catch(err => console.log(err))
+    },
     productList: (req, res) => {
         res.render('products/products', {
             style: 'productList', 
