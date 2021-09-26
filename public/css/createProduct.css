@@ -47,6 +47,7 @@ form{
 form label{
     font-size: 1.25em;
     margin-bottom: .8em;
+    margin-top: 1em;
     font-weight: 500;
 }
 
@@ -61,12 +62,12 @@ input, textarea{
     
 input[type=text]{
     height: 2em;
-    margin-bottom: 2.5em;
+    margin-bottom: .75em;
 }
 
 textarea{
     height: 7em;
-    margin-bottom: 2.5em;
+    margin-bottom: .75em;
     padding: .5em;
 }
 
@@ -76,7 +77,7 @@ select{
 
 input[type=file]{
     height: 2em;
-    margin-bottom: 2.5em;
+    margin-bottom:.75em;
     font-weight: 400;
     padding: .20em 0;
 }
@@ -99,8 +100,8 @@ legend{
     font-weight: 500;
 }
 
-fieldset label{
-    font-size: 14px;
+fieldset#categoria{
+    margin-top: 1.5em;
 }
 
 #colores{
@@ -111,6 +112,18 @@ fieldset label{
     flex-wrap: wrap;
 
 }
+
+.error{
+    margin-bottom: 1em;
+    color: rgb(255, 91, 91);
+    display: none
+}
+
+.error.active{
+    display: block
+}
+
+
 
 
 

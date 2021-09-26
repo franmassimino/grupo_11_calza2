@@ -43,7 +43,7 @@ registroForm.addEventListener('submit', e => {
     if (errors.length) {
         console.log(errors);
     } else {
-        registerForm.submit()
+        loginForm.submit()
     }
 
 })

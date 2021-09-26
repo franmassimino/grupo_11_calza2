@@ -7,6 +7,5 @@ module.exports = {
             title: 'Home',
             list: product.allWithExtra()
         })
-        console.log(req.session)
     },
 }

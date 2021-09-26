@@ -33,5 +33,12 @@
     "email": "massiminos@hotmail.com",
     "password": "$2b$10$WVil/KeTSNfhEXM7J8Hj8.Qm.1SSGdRPz.wjr/yU/4DkGqn1aUg8e",
     "img": "/img/uploads/users/imagen-1632603316268.png"
+  },
+  {
+    "id": 6,
+    "user": "Francisco",
+    "email": "massiminos@hotmail.com",
+    "password": "$2b$10$lRxC6j1sCc0vEZk2iP3HK.vLAVV5f8zeQF.G6drWhg0Yh5vfSsGwy",
+    "img": "/img/uploads/users/imagen-1632678345401.jpg"
   }
 ]

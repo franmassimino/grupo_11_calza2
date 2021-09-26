@@ -25,7 +25,7 @@ module.exports = {
   processRegister: (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      res.send(`Hay errores`);
+      res.send(errors);
     } else {
       userModel.create(req.body, req.file);
       return res.redirect("/users/login");

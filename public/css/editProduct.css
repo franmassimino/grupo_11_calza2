@@ -48,6 +48,7 @@ form label{
     font-size: 1.25em;
     margin-bottom: .8em;
     font-weight: 500;
+    margin-top: 1.5em;
 }
 
 input, textarea{
@@ -61,22 +62,22 @@ input, textarea{
     
 input[type=text]{
     height: 2em;
-    margin-bottom: 2.5em;
+    margin-bottom: .5em;
 }
 
 select{
-    margin-bottom: 2.5em;
+    margin-bottom: .5em;
 }
 
 textarea{
     height: 7em;
-    margin-bottom: 2.5em;
+    margin-bottom: .5em;
     padding: .5em;
 }
 
 input[type=file]{
     height: 2em;
-    margin-bottom: 2.5em;
+    margin-bottom: .5em;
     font-weight: 400;
     padding: .20em 0;
 }
@@ -85,6 +86,7 @@ input[type=file]{
     margin-bottom: 1em;
     width: 100%;
     padding: 0;
+    margin-top: 1.25em;
 }
 
 legend{
@@ -148,6 +150,16 @@ form button{
 
 form button:hover{
     background-color: var(--dorado-oscuro);
+}
+
+.error{
+    margin-bottom: 1em;
+    color: rgb(255, 91, 91);
+    display: none
+}
+
+.error.active{
+    display: block
 }
 
 
