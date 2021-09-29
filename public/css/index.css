@@ -36,7 +36,6 @@ main{
 
 
 .swiper-slide .carrusel-wrapper{
-    width: 100%;
     height: 100%;
 }
 
@@ -315,6 +314,7 @@ figure.product-img{
 
     .swiper-slide{
         margin-top: 0;
+        max-width: 100vw;
     }
 
     .swiper-slide .cta{
