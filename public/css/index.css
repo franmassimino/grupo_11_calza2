@@ -1,3 +1,7 @@
+:root{
+    --swiper-theme-color: rgba(255,255,255,.5) !important
+}
+
 main{
     max-width: 100vw;
     padding: 2.5vh 5vw;
@@ -19,42 +23,68 @@ main{
     margin-bottom: 10vh;
 }
 
-.carrusel{
-    background-image: url('/img/carrusel.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+.swiper {
     width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    width: 100%;
+    height: 100%;
     position: relative;
+}
+
+
+.swiper-slide .carrusel-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide h2{
+    position: absolute;
     color: white;
+    font-size:60px;
+    bottom: 26%;
+    left: 5%;
     text-transform: uppercase;
-    font-weight: 800;
-    cursor: pointer;
-    max-width: 1800px;
+    font-weight:800;
+    line-height: 70px;
 }
 
-.carrusel h1{
+.swiper-slide .cta{
     position: absolute;
-    left: 50px;
-    bottom: 15vh;
-    font-size: 4em;
-    margin-bottom: 1em;
-}
-.carrusel-link{
-    text-decoration: none;
     color: white;
-}
-
-.carrusel .cta{
-    position: absolute;
-    left: 50px;
-    bottom: 12.5vh;
-    font-size: 1.75em;
+    bottom: 15%;
+    left: 5%;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 1.5em;
     text-decoration: none;
     color: black;
     background: var(--dorado);
     padding: .5em 1.25em;
+    cursor: pointer;
     transition: all .3s ease;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adidas{
+   filter: brightness(.8)
+}
+
+.cta.jordan{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.cta.jordan:hover{
+    color:rgb(17, 17, 17);
+    background-color: white;
 }
 
 .cta:hover{
@@ -283,27 +313,44 @@ figure.product-img{
 
     /*hero*/
 
-    .carrusel{
+    .swiper-slide{
+        margin-top: 0;
+    }
+
+    .swiper-slide .cta{
+        display: none;
+    }
+
+    .carrusel-wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 0;
+        position: relative;
+        padding: 1em;
+        max-width: 100vw;
     }
 
-    .carrusel h1{
-        position: relative;
-        text-align: center;
-        left: auto;
-        bottom: auto;
+    .swiper-slide img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
-    .carrusel .cta{
-        position: relative;
+    .swiper-slide h2{
+        position: revert;
         text-align: center;
-        left: auto;
-        bottom: auto;
+        font-size: 50px;
+        line-height:1.25em
     }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+
 
     /*productos*/
     .products-top-row, .products-bottom-row{
@@ -376,18 +423,8 @@ figure.product-img{
         margin-bottom: 5vh;
     }
 
-    .carrusel{
-        background-image: url('/img/carrusel-mobile.png');
-        justify-content: flex-end;
-    }
-
-    .carrusel h1{
-        font-size: 10vw;
-    }
-
-    .carrusel .cta{
-        font-size: 5vw;
-        margin-bottom: 10vh;
+    .swiper-slide h2{
+        font-size: 30px;
     }
 
     /*banners*/

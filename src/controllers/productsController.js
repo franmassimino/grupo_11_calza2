@@ -9,12 +9,31 @@ const db = require('../database/models/index')
 const { Product } = db
 
 module.exports = {
-    productList: (req, res) => {
-        res.render('products/products', {
+    index: async (req, res) => {
+       try {
+           let list = await Product.findAll()
+           res.render('products/products', {
             style: 'productList',
             title: 'Productos',
-            list: product.allWithExtra()
+            list: list
         })
+       } catch (e) {
+           console.log(e)
+           res.redirect('/')
+       } 
+    },
+
+    productList: (req, res) => {
+        try {
+            res.render('products/products', {
+             style: 'productList',
+             title: 'Productos',
+             list: product.allWithExtra()
+         })
+        } catch (e) {
+            console.log(e)
+            res.redirect('/')
+        } 
     },
 
     productDetail: (req, res) => {

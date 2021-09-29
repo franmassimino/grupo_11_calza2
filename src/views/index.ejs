@@ -9,12 +9,34 @@
 
     <main>
         <section class="hero">
-            <a class="carrusel-link" href="detail">
-                <div class="carrusel">
-                    <h1>Lo ultimo en <br>Air force 1</h1>
-                    <a href="products/detail/1" class="cta">comprar ya</a>
-                </div>
-            </a>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a class='carrusel-wrapper' href="/products/detail/1">
+                        <img src="/img/carrusel.png">
+                        <h2>Lo ultimo en <br> Air Force 1</h2>
+                        <a class='cta' href="/products/detail/1">Comprar ya</a>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class='carrusel-wrapper' href="/products">
+                        <img src="/img/jordan-banner.jpg">
+                        <h2>¡Air Jordan <br> para todos!</h2>
+                        <a class='cta jordan' href="/products">Comprar ya</a>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a class='carrusel-wrapper' href="/products">
+                        <img class='adidas' src="/img/running.jpg">
+                        <h2>50% de descuento <br> en running</h2>
+                        <a class='cta' href="/products">Comprar ya</a>
+                    </a>
+                  </div>
+            </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
         </section>
         <section class="products">
             <div class="title">
@@ -68,6 +90,9 @@
             </div>
         </section>
     </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 
     <%- include('./partials/footer')  %> 
 

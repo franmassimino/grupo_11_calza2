@@ -6,11 +6,26 @@ body{
     box-sizing: border-box;
 }
 
+.searchbar{
+    width: 85%;
+    height: 50px;
+    margin: 0;
+}
+
+.searchbar input {
+    border: 0;
+    background-color: rgba(241, 241, 241, .5);
+    width: 100%;
+    padding: 10px;
+    outline: none
+}
+
 .products-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 
 .products-list article{

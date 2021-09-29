@@ -1,5 +1,5 @@
-module.exports = (Sequelize, DataType) => {
-    return Sequelize.define('Product', {
+module.exports = (sequelize, DataType) => {
+    const Product = sequelize.define('Product', {
         id: {
             type: DataType.INTEGER,
             primaryKey: true,
@@ -38,4 +38,10 @@ module.exports = (Sequelize, DataType) => {
         timestamps: false,
         tableName: 'products'
     })
+    
+    Product.associate = ({Brand}) => {
+        Product.belongsTo(Brand, {as: 'brands', foreignKey: 'brand'})
+    }
+
+    return Product
 }
