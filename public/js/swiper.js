@@ -4,9 +4,9 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
-/*     autoplay: {
+    autoplay: {
         delay: 4000,
-      },  */
+      },  
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
