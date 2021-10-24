@@ -16,7 +16,7 @@
         <a href="/users/profile"><i class="fas fa-user"></i></a>
       </div>
       <% if (locals.user) { %>
-        <a href="/users/logout" class="login-button">Cerrar sesión</a>
+        <a href="/users/logout" class="login-button">Bienvenido <%=locals.user.user%> | Cerrar sesión</a>
         <% } else { %>
         <a href="/users/login" class="login-button">Iniciar sesión / registrarse</a>
       <% } %> 

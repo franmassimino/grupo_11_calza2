@@ -11,6 +11,9 @@
                 <h2>Todos los productos</h2>
             </div>
             <div class="products-list">
+                <div class="searchbar">
+                    <input type="text" placeholder='Filtrar productos'>
+                </div>
                 <% list.forEach(product => { %>
                     <article>
                         <a class="link" href="products/detail/<%= product.id %>">

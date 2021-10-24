@@ -7,9 +7,10 @@ body{
 }
 
 .searchbar{
-    width: 85%;
     height: 50px;
-    margin: 0;
+    min-width: 85%;
+    max-width: 1450px;
+    margin: 15px 0 !important;
 }
 
 .title{

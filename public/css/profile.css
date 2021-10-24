@@ -23,6 +23,7 @@ main{
 .profile-img{
     width: 400px;
     height: 400px;
+    border: 1px solid var(--dorado);
 }
 
 .profile-img img{
