@@ -21,6 +21,9 @@
             </div>
             <div class="precio">
                 <p>$<%= product.price %></p>
+                <% if (locals.user) { %>
+                    <a href="/products/edit/<%= product.id %>" class="login-button">Editar producto</a>
+                <% } %>
             </div>
 
             <div class="container">

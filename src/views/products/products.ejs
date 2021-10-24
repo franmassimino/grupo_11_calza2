@@ -11,9 +11,6 @@
                 <h2>Todos los productos</h2>
             </div>
             <div class="products-list">
-                <form class="searchbar">
-                    <input type="text" name="keyword" placeholder='Busque por marca, modelo, color...'>
-                </form>
                 <% list.forEach(product => { %>
                     <article>
                         <a class="link" href="products/detail/<%= product.id %>">

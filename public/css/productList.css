@@ -12,6 +12,10 @@ body{
     margin: 0;
 }
 
+.title{
+    margin-bottom: 30px !important;
+}
+
 .searchbar input {
     border: 0;
     background-color: rgba(241, 241, 241, .5);
@@ -19,6 +23,7 @@ body{
     padding: 10px;
     outline: none
 }
+
 
 .products-list{
     display: flex;
