@@ -11,21 +11,22 @@
                 <h2>Todos los productos</h2>
             </div>
             <div class="products-list">
-                <div class="searchbar">
-                    <input type="text" placeholder='Busque por marca, modelo, color...'>
-                </div>
+                <form class="searchbar">
+                    <input type="text" name="keyword" placeholder='Busque por marca, modelo, color...'>
+                    <button>Buscar</button>
+                </form>
                 <% list.forEach(product => { %>
                     <article>
                         <a class="link" href="products/detail/<%= product.id %>">
                         <figure class="product-img">
-                            <% if (product.img) { %>
-                                <img src="<%= product.img %> " alt="">
+                            <% if (product.img != null) { %>
+                                <img src="<%= product.img %>" alt="">
                             <% } else {%>
-                                <img src="/img/uploads/zapatilla1.png" alt="">
+                                <img src="/img/uploads/products/zapatilla1.png" alt="">
                             <% } %> 
                         </figure>
-                        <h3><%= `${product.brand.name} ${product.model}` %> </h3>
-                        <p><%= product.price %> </p>
+                        <h3><%= `${product.brands.name} ${product.model}` %> </h3>
+                        <p>$<%= product.price %> </p>
                         <a href="products/detail/<%= product.id %> " class="comprar">comprar</a>
                     </article>
                 <% }) %>

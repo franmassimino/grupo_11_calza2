@@ -130,5 +130,15 @@
     "category": 3,
     "destacada": false,
     "color": 1
+  },
+  {
+    "id": 13,
+    "brand": 3,
+    "model": "Modelo",
+    "price": null,
+    "description": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "img": "/img/uploads/products/imagen-1635036336424.png",
+    "category": 3,
+    "color": 3
   }
 ]

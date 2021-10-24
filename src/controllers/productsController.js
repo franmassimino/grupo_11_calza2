@@ -1,48 +1,48 @@
-const product = require('../models/product');
-const color = require('../models/color');
-const brand = require('../models/brand');
-const category = require('../models/categories');
 const { validationResult } = require("express-validator");
-
 //DB
 const db = require('../database/models/index')
-const { Product } = db
+const { Product, Brand, Color, Category } = db
+const { Op } = require('sequelize')
+const { like } = Op
 
 module.exports = {
-    index: async (req, res) => {
-       try {
-           let list = await Product.findAll()
-           res.render('products/products', {
-            style: 'productList',
-            title: 'Productos',
-            list: list
-        })
-       } catch (e) {
-           console.log(e)
-           res.redirect('/')
-       } 
-    },
-
-    productList: (req, res) => {
+    productList: async (req, res) => {
         try {
+            const brands = await Brand.findAll()
+            let list = await Product.findAll({ include: 'brands' })
             res.render('products/products', {
-             style: 'productList',
-             title: 'Productos',
-             list: product.allWithExtra()
-         })
+                style: 'productList',
+                title: 'Productos',
+                list: list
+            })
         } catch (e) {
             console.log(e)
-            res.redirect('/')
-        } 
+            res.redirect('/404')
+        }
     },
 
-    productDetail: (req, res) => {
-        res.render('products/productDetail', {
-            style: 'productDetail',
-            title: 'productDetail',
-            product: product.one(req.params.id),
-            list: product.all()
-        })
+    productDetail: async (req, res) => {
+        try {
+            const brands = await Brand.findAll()
+            const colors = await Color.findAll()
+            let product = await Product.findByPk(req.params.id, { include: ['brands', 'colors'] })
+            let list = await Product.findAll({
+                include: ['brands'], where: {
+                    id: {
+                        [Op.ne]: req.params.id,
+                    }
+                }, limit: 4
+            })
+            res.render('products/productDetail', {
+                style: 'productDetail',
+                title: 'productDetail',
+                list: list,
+                product: product
+            })
+        } catch (e) {
+            console.log(e)
+            res.redirect('/404')
+        }
     },
 
     productCart: (req, res) => {
@@ -52,45 +52,88 @@ module.exports = {
         })
     },
 
-    createProduct: (req, res) => {
-        res.render('products/createProduct', {
-            style: 'createProduct',
-            title: 'Crear producto',
-            colors: color.all(),
-            brands: brand.all(),
-            categories: category.all()
-        })
+    createProduct: async (req, res) => {
+        try {
+            const brands = await Brand.findAll()
+            const colors = await Color.findAll()
+            const categories = await Category.findAll()
+            res.render('products/createProduct', {
+                style: 'createProduct',
+                title: 'Crear producto',
+                colors: colors,
+                brands: brands,
+                categories: categories
+            })
+        } catch (e) {
+            console.log(e)
+            res.redirect('/404')
+        }
     },
 
-    editProduct: (req, res) => {
-        res.render('products/editProduct', {
-            style: 'editProduct',
-            title: 'Editar producto',
-            product: product.one(req.params.id),
-            colors: color.all(),
-            brands: brand.all(),
-            categories: category.all()
-        })
+    editProduct: async (req, res) => {
+        try {
+            const brands = await Brand.findAll()
+            const colors = await Color.findAll()
+            const categories = await Category.findAll()
+            let product = await Product.findByPk(req.params.id, { include: ['brands', 'colors', 'categories'] })
+            res.render('products/editProduct', {
+                style: 'editProduct',
+                title: 'Editar producto',
+                product: product,
+                colors: colors,
+                brands: brands,
+                categories: categories
+            })
+        } catch (e) {
+            console.log(e)
+            res.redirect('/404')
+        }
     },
 
-    saveProduct: (req, res) => {
+    saveProduct: async (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             res.status(404).send(errors)
         } else {
-            let result = product.new(req.body, req.file)
-            return result == true ? res.redirect('/products') : res.send("Error al cargar la informacion")
+            try {
+                let data = {
+                    ...req.body,
+                    img: `/img/uploads/products/${req.file.filename}`,
+                }
+                const created = await Product.create(data)
+                created ? res.redirect('/') : res.send("Error al cargar la informacion")
+            } catch (e) {
+                console.log(e)
+                res.redirect('/404')
+            }
         }
     },
 
-    updateProduct: (req, res) => {
-        let result = product.edit(req.body, req.file, req.params.id)
-        return result == true ? res.redirect('/products') : res.send("Error al cargar la informacion")
+    updateProduct: async (req, res) => {
+        let product = await Product.findByPk(req.params.id)
+        try {
+            let data = {
+                ...req.body,
+            }
+            console.log(data.img);
+            const updated = await Product.update(data, {where: {
+                id: req.params.id
+            }})
+            updated ? res.redirect('/products') : res.send("Error al cargar la informacion")
+        } catch (e) {
+            console.log(e)
+            res.redirect('/404')
+        }
     },
 
-    deleteProduct: (req, res) => {
-        let result = product.delete(req.params.id);
-        return result == true ? res.redirect("/") : res.send("Error al cargar la informacion")
+    deleteProduct: async (req, res) => {
+        try {
+            const deleted = await Product.destroy({where: {id: req.params.id}})
+            return deleted == true ? res.redirect("/") : res.send("Error al cargar la informacion")
+        } catch (e) {
+            console.log(e)
+            res.redirect('/404')
+        }
     },
 
 }

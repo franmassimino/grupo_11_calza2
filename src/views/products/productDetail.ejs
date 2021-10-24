@@ -9,23 +9,23 @@
         <div class="producto-completo">       
         <div class="lado-izquierdo">
             <figure class="imgprincipal">
-                <img src="<%= product.img %>" alt=<%= `${product.brand.name}-${product.model}` %>  class="productselect">
+                <img src="<%= product.img %>" alt=<%= `${product.brands.name}-${product.model}` %>  class="productselect">
             </figure>
         </div>
         <div class="lado-derecho">
             <div class="marca-principal">
-            <h3><%= product.brand.name %> </h3>
+            <h3><%= product.brands.name %> </h3>
             </div>
             <div class="modelo-principal">
             <h2><%= product.model %> </h2>
             </div>
             <div class="precio">
-                <p><%= product.price %></p>
+                <p>$<%= product.price %></p>
             </div>
 
             <div class="container">
                 <h3 class="color">COLOR</h3>
-                <p><%= product.color.name %> </p>
+                <p><%= product.colors.name %> </p>
             </div>
 
             <div class="titulo-informacion">
@@ -52,49 +52,21 @@
             <h2>Productos Similares</h2>
         </div>
         <div class="similar-products">
-            <article>
-                    <a class="link" href="/products/detail/5">
-                    <figure class="product-img">
-                        <img src="/img/uploads/products/zapatilla5.png" alt="">
-                    </figure>
-                    <h3>adidas performance</h3>
-                    <p>$520</p>
-                    <a href="/products/detail/5" class="comprar">comprar</a>
-                </article>
-        
-            
+            <% list.forEach(product => { %>
                 <article>
-                    <a class="link" href="/products/detail/2">
+                    <a class="link" href="/products/detail/<%= product.id %>">
                     <figure class="product-img">
-                        <img src="/img/uploads/products/zapatilla2.png" alt="">
+                        <% if (product.img) { %>
+                            <img src="<%= product.img %> " alt="">
+                        <% } else {%>
+                            <img src="/img/uploads/zapatilla1.png" alt="">
+                        <% } %> 
                     </figure>
-                    <h3>adidas Originals 11</h3>
-                    <p>$450</p>
-                    <a href="/products/detail/2" class="comprar">comprar</a>
+                    <h3><%= `${product.brands?.name} ${product.model}` %> </h3>
+                    <p>$<%= product.price %> </p>
+                    <a href="/products/detail/<%= product.id %> " class="comprar">comprar</a>
                 </article>
-        
-
-                <article>
-                    <a class="link" href="/products/detail/3">
-                    <figure class="product-img">
-                        <img src="/img/uploads/products/zapatilla3.png" alt="">
-                    </figure>
-                    <h3>Nike LeBron 18</h3>
-                    <p>$930</p>
-                    <a href="/products/detail/3" class="comprar">comprar</a>
-                </article>
-        
-
-                <article>
-                    <a class="link" href="/products/detail/4">
-                    <figure class="product-img">
-                        <img src="/img/uploads/products/zapatilla4.png" alt="">
-                    </figure>
-                    <h3>Nike Air Max 97</h3>
-                    <p>$1580</p>
-                    <a href="/products/detail/4" class="comprar">comprar</a>
-                </article>
-        
+            <% }) %>
         </div>
     </section>
     </main>

@@ -13,19 +13,17 @@ const upload = multer({storage: storage("products")})
 
 app.get('/products', productsController.productList)
 
-app.get('/caca', productsController.index)
-
 app.get('/products/detail/:id', productsController.productDetail)
 
 app.get('/products/cart', productsController.productCart)
 
-app.get('/products/create', isLogged, productsController.createProduct)
+app.get('/products/create', /* isLogged, */ productsController.createProduct)
 
-app.get('/products/edit/:id',  isLogged, productsController.editProduct)
+app.get('/products/edit/:id',  /* isLogged, */ productsController.editProduct)
 
-app.post('/products/save', [upload.single('imagen'), productValidation], productsController.saveProduct)
+app.post('/products/save', [upload.single('img')], productsController.saveProduct)
 
-app.put('/products/update/:id', [upload.single('imagen'), productValidation], productsController.updateProduct)
+app.put('/products/update/:id', [upload.single('img'), productValidation], productsController.updateProduct)
 
 app.delete('/products/delete/:id', productsController.deleteProduct)
 
