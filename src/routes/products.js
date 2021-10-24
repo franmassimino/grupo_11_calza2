@@ -17,9 +17,9 @@ app.get('/products/detail/:id', productsController.productDetail)
 
 app.get('/products/cart', productsController.productCart)
 
-app.get('/products/create', /* isLogged, */ productsController.createProduct)
+app.get('/products/create', isLogged, productsController.createProduct)
 
-app.get('/products/edit/:id',  /* isLogged, */ productsController.editProduct)
+app.get('/products/edit/:id',  isLogged, productsController.editProduct)
 
 app.post('/products/save', [upload.single('img')], productsController.saveProduct)
 

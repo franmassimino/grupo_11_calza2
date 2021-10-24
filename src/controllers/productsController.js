@@ -101,7 +101,7 @@ module.exports = {
                     img: `/img/uploads/products/${req.file.filename}`,
                 }
                 const created = await Product.create(data)
-                created ? res.redirect('/') : res.send("Error al cargar la informacion")
+                created ? res.redirect('/products') : res.send("Error al cargar la informacion")
             } catch (e) {
                 console.log(e)
                 res.redirect('/404')
@@ -129,7 +129,7 @@ module.exports = {
     deleteProduct: async (req, res) => {
         try {
             const deleted = await Product.destroy({where: {id: req.params.id}})
-            return deleted == true ? res.redirect("/") : res.send("Error al cargar la informacion")
+            return deleted == true ? res.redirect("/products") : res.send("Error al cargar la informacion")
         } catch (e) {
             console.log(e)
             res.redirect('/404')

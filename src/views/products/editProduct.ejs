@@ -13,7 +13,7 @@
             </figure>
             <form action="/products/update/<%= product.id %>?_method=PUT" method="POST" id="productForm" enctype="multipart/form-data">
                 <label for="imagen">Actualizar imagen de producto</label>
-                <input type="file" id="imagen" name="img" value="<%= product.img %> >
+                <input type="file" id="imagen" name="img" value="<%= product.img %>">
                 <small id="imageError" class='error'>La imagen del producto debe ser formato png, jpg, jpeg o gif</small>
 
                 <label for="marca">Marca</label>

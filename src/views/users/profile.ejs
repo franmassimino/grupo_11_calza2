@@ -3,9 +3,20 @@
     <%- include('../partials/head') %> 
 <body>
     <%- include('../partials/header')  %>
-    <h1><%= locals.user.user %> </h1>
-    <p><%= locals.user.email %></p>
-    <img src="<%= locals.user.img %>" alt="">
-    <%- include('../partials/footer')  %> 
+    <main>
+        <div class="profile">
+            <h1>Mi perfil</h1>
+            <div class="profile-img">
+                <img src="<%= locals.user.img %>" alt="">
+            </div>
+            <h2><%= locals.user.user %> </h2>
+            <p><%= locals.user.email %></p>
+            <div class="buttons">
+                <a href="/users/logout" class="logout">Cerrar sesión</a>
+                <a href="/users/destroy" class="destroy">Eliminar cuenta</a>
+            </div>
+        </div>
+    </main>
+        <%- include('../partials/footer')  %> 
 </body>
 </html>

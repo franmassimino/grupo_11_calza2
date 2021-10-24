@@ -91,7 +91,8 @@ img{
 .container p{
     font-family: 'roboto';
     font-size: 15px;
-    margin-top: 0;
+    margin: 5px auto 0;
+    text-align: center;
 }
 
 .titulo-informacion h3{
@@ -126,6 +127,9 @@ img{
     padding-top: 20px;
 }
 
+.products{
+    margin-top: 2em;
+}
 
 .informacion ul li{
     margin-bottom: .5em;
@@ -197,6 +201,11 @@ img{
     align-self: center;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1800px;
+}
+
+.similar-products article{
+    width: auto;
 }
 
 @media (min-width: 1024px) {
@@ -247,6 +256,10 @@ img{
     margin-top: 10px;
     font-size: 1.25em;
     margin-bottom: .25em;
+}
+
+.container p{
+    text-align: left;
 }
 
 .lista-opciones {

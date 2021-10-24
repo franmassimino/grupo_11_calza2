@@ -4,6 +4,7 @@ const path = require('path')
 const usersController = require('../controllers/usersController')
 const isLogged = require('../middlewares/logged')
 const auth = require('../middlewares/auth')
+const hash = require('../middlewares/hash')
 
 //Multer
 const multer = require('multer')
@@ -23,9 +24,11 @@ app.get('/users/register', auth,  usersController.register)
 
 app.get("/users/logout", usersController.logout)
 
-app.post('/users/processRegister', upload.single('imagen'), usersController.processRegister)
+app.post('/users/processRegister', [upload.single('img'), hash], usersController.processRegister)
 
 app.post('/users/processLogin', loginValidation, usersController.processLogin)
+
+app.delete('/users/destroy', usersController.destroy)
 
 /* app.put("/users/update", usersController.update) */
 

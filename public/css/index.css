@@ -99,6 +99,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 2.5%;
 }
 
 a.link{
@@ -114,6 +115,7 @@ a.link{
 }
 
 .products .title{
+    margin-bottom: 1em;
     padding: 1.5em 2em ;
     border-bottom: 3px solid var(--dorado);
     width: 50%;
@@ -160,6 +162,7 @@ a.link{
 figure.product-img{
     max-width: 250px;
     margin: 0;
+    height: 75%;
 }
 
 #imagen-rota{
@@ -168,6 +171,8 @@ figure.product-img{
 
 .products article img{
     width: 100%;
+    height: 100%;
+    object-fit:contain;
     max-width: 250px;
     cursor: pointer;
     transition: all .3s ease;
